@@ -6,6 +6,7 @@ import Sessions from '../components/Sessions';
 import Gallery from '../components/Gallery';
 import Grades from '../components/Grades';
 import Facilities from '../components/Facilities';
+import Teachers from '../components/Teachers';
 import Testimonials from '../components/Testimonials';
 import News from '../components/News';
 
@@ -19,6 +20,7 @@ function HomePage() {
       <Gallery />
       <Grades />
       <Facilities />
+      <Teachers />
       <Testimonials />
       <News />
     </>

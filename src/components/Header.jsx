@@ -1,67 +1,76 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaPhone, FaClock, FaFacebook, FaLinkedin, FaYoutube, FaSearch } from 'react-icons/fa';
 
 function Header() {
   return (
-    <header className="w-full border-b bg-white/80 backdrop-blur sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded bg-pink-500" />
-          <span className="text-xl font-bold text-gray-900">Toddly</span>
-        </Link>
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
-          <Link to="/" className="hover:text-pink-600">Home</Link>
-          <div className="relative group">
-            <button className="hover:text-pink-600">About Us</button>
-            <div className="absolute left-0 mt-2 hidden group-hover:block bg-white border rounded shadow-md min-w-56 p-2">
-              <div className="grid grid-cols-1 gap-1">
-                <Link to="/about" className="px-3 py-2 rounded hover:bg-gray-50">About Us</Link>
-                <Link to="/about/who-we-are" className="px-3 py-2 rounded hover:bg-gray-50">Who we are?</Link>
-                <Link to="/about/teaching-methodology" className="px-3 py-2 rounded hover:bg-gray-50">Teaching Methodology</Link>
-                <Link to="/about/british-curriculum" className="px-3 py-2 rounded hover:bg-gray-50">Our British Curriculum</Link>
-                <Link to="/about/external-examinations" className="px-3 py-2 rounded hover:bg-gray-50">External Examinations</Link>
-              </div>
+    <>
+      {/* Top Bar */}
+      <div className="bg-purple-600 text-white py-2">
+        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between text-sm">
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-2">
+              <FaPhone size={12} className="text-gray-300" />
+              <span>Phone: +1 333 456 888</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <FaClock size={12} className="text-gray-300" />
+              <span>Opening Time: 9:30am-5:30pm</span>
             </div>
           </div>
-          <div className="relative group">
-            <button className="hover:text-pink-600">Admissions</button>
-            <div className="absolute left-0 mt-2 hidden group-hover:block bg-white border rounded shadow-md min-w-56 p-2">
-              <Link to="/admissions" className="block px-3 py-1 rounded hover:bg-gray-50">Admissions</Link>
-              <Link to="/admissions/general-info" className="block px-3 py-2 rounded hover:bg-gray-50">General Info</Link>
-              <Link to="/admissions/application-form" className="block px-3 py-2 rounded hover:bg-gray-50">Application Form</Link>
-              <Link to="/admissions/rules-and-uniform" className="block px-3 py-2 rounded hover:bg-gray-50">Rules and Uniform</Link>
+          <div className="flex items-center gap-2">
+            <span>Follow Us:</span>
+            <div className="flex gap-2">
+              <FaFacebook size={14} className="bg-purple-700 rounded-full p-1" />
+              <FaLinkedin size={14} className="bg-purple-700 rounded-full p-1" />
+              <FaYoutube size={14} className="bg-purple-700 rounded-full p-1" />
             </div>
           </div>
-          <div className="relative group">
-            <button className="hover:text-pink-600">Education</button>
-            <div className="absolute left-0 mt-2 hidden group-hover:block bg-white border rounded shadow-md min-w-56 p-2">
-              <Link to="/education" className="block px-3 py-2 rounded hover:bg-gray-50">Education</Link>
-              <Link to="/education/eyfs" className="block px-3 py-2 rounded hover:bg-gray-50">EYFS</Link>
-              <Link to="/education/primary" className="block px-3 py-2 rounded hover:bg-gray-50">Primary</Link>
-              <Link to="/education/secondary" className="block px-3 py-2 rounded hover:bg-gray-50">Secondary</Link>
-            </div>
-          </div>
-          <div className="relative group">
-            <button className="hover:text-pink-600">Extra-Curricular</button>
-            <div className="absolute left-0 mt-2 hidden group-hover:block bg-white border rounded shadow-md min-w-56 p-2">
-              <Link to="/extra-curricular" className="block px-3 py-2 rounded hover:bg-gray-50">Extra-Curricular</Link>
-              <Link to="/extra-curricular/field-trips" className="block px-3 py-2 rounded hover:bg-gray-50">Field/Educational Trips</Link>
-            </div>
-          </div>
-          <Link to="/gallery" className="hover:text-pink-600">Gallery</Link>
-          <Link to="/careers" className="hover:text-pink-600">Careers</Link>
-          <Link to="/contact" className="hover:text-pink-600">Contact</Link>
-        </nav>
-        <div className="flex items-center gap-3">
-          <Link to="/admissions" className="hidden md:inline-flex px-4 py-2 rounded-md bg-pink-600 text-white hover:bg-pink-700">Admission</Link>
-          <button className="md:hidden inline-flex p-2 rounded-md border text-gray-700" aria-label="Open Menu">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </button>
         </div>
       </div>
-    </header>
+
+      {/* Main Header */}
+      <header className="w-full bg-white sticky top-0 z-50 border-b">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+          <Link to="/" className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-400 flex items-center justify-center">
+              <span className="text-white font-bold text-lg">T</span>
+            </div>
+            <span className="text-2xl font-bold text-purple-800">Toddly</span>
+          </Link>
+          
+          <nav className="hidden lg:flex items-center gap-8 text-sm font-semibold text-gray-700">
+            <Link to="/" className="bg-purple-600 text-white px-4 py-2 rounded-full">HOME</Link>
+            <Link to="/about" className="hover:text-purple-600">ABOUT</Link>
+            <Link to="/pages" className="hover:text-purple-600">PAGES</Link>
+            <Link to="/shop" className="hover:text-purple-600">SHOP</Link>
+            <Link to="/blog" className="hover:text-purple-600">BLOG</Link>
+            <Link to="/contact" className="hover:text-purple-600">CONTACT</Link>
+          </nav>
+          
+          <div className="flex items-center gap-3">
+            <button className="w-10 h-10 rounded-full border-2 border-dashed border-gray-400 flex items-center justify-center">
+              <FaSearch size={16} className="text-gray-600" />
+            </button>
+            <Link to="/admissions" className="bg-orange-500 text-white px-6 py-2 rounded-full font-semibold border-2 border-dashed border-orange-600">
+              ADMISSION
+            </Link>
+            <button className="lg:hidden p-2">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        {/* Scalloped border */}
+        <div className="w-full h-4 bg-white relative">
+          <svg viewBox="0 0 1200 40" className="w-full h-full">
+            <path d="M0,40 Q300,0 600,20 T1200,10 L1200,40 Z" fill="white" />
+          </svg>
+        </div>
+      </header>
+    </>
   );
 }
 

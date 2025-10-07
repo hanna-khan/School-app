@@ -1,40 +1,102 @@
 import React from 'react';
-import { FaPlay, FaTruck, FaCoffee, FaHeart, FaHome } from 'react-icons/fa';
 
 const facilities = [
-  { title: 'Online Class', image: 'https://images.unsplash.com/photo-1587613865763-4b8b0b1eeb83?q=80&w=900&auto=format&fit=crop', icon: FaCoffee },
-  { title: 'Pick & Drop', image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=900&auto=format&fit=crop', icon: FaTruck },
-  { title: 'Play Ground', image: 'https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=900&auto=format&fit=crop', icon: FaPlay },
-  { title: 'Healthy Foods', image: 'https://images.unsplash.com/photo-1505577058444-a3dab90d4253?q=80&w=900&auto=format&fit=crop', icon: FaHeart },
-  { title: 'Modern School', image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=900&auto=format&fit=crop', icon: FaHome },
+  { 
+    title: 'Play Ground', 
+    description: 'Pre-School Has Open Doors Consntly Expand',
+    color: 'bg-green-500',
+    icon: (
+      <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+      </svg>
+    )
+  },
+  { 
+    title: 'Early Club', 
+    description: 'Pre-School Has Open Doors Consntly Expand',
+    color: 'bg-purple-600',
+    icon: (
+      <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17 5.33C17 3.5 15.5 2 13.67 2S10.33 3.5 10.33 5.33c0 .85.28 1.64.76 2.28L12 9l.91-1.39c.48-.64.76-1.43.76-2.28C13.67 3.5 12.17 2 10.33 2S7 3.5 7 5.33c0 .85.28 1.64.76 2.28L9 9l1.24-1.39c.48-.64.76-1.43.76-2.28z"/>
+      </svg>
+    )
+  },
+  { 
+    title: 'Music Club', 
+    description: 'Pre-School Has Open Doors Consntly Expand',
+    color: 'bg-pink-600',
+    icon: (
+      <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+      </svg>
+    )
+  },
+  { 
+    title: 'Lunch Club', 
+    description: 'Pre-School Has Open Doors Consntly Expand',
+    color: 'bg-orange-500',
+    icon: (
+      <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+      </svg>
+    )
+  },
 ];
 
 function Facilities() {
   return (
-    <section id="facilities" className="py-16">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-10">
-          <p className="uppercase tracking-wider text-pink-600 font-semibold">School Facilities</p>
-          <h2 className="mt-2 text-3xl md:text-4xl font-extrabold text-gray-900">Engaging & Spacious School</h2>
+    <section id="facilities" className="py-20 bg-white relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute top-0 left-0 w-full h-full">
+        <div className="absolute top-20 right-20 w-32 h-32 bg-green-100/30 rounded-full blur-xl"></div>
+        <div className="absolute bottom-20 left-20 w-24 h-24 bg-purple-100/20 rounded-full blur-lg"></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 relative z-10">
+        {/* Header with experience badge */}
+        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-sm">🎯</span>
+              </div>
+              <p className="uppercase tracking-wider text-orange-500 font-bold text-sm">INTRODUCING PLAYSROOM</p>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">Kids Activities And Fun</h2>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Pre-School Has Open Doors A Offer Constantly Expanding Children Our Goal Is To Carefully Educate.
+            </p>
+          </div>
+          
+          <div className="flex justify-end">
+            <div className="bg-purple-600 text-white p-8 rounded-2xl shadow-lg">
+              <div className="text-4xl font-bold mb-2">20+</div>
+              <div className="text-lg">Years Of Experience</div>
+            </div>
+          </div>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+
+        {/* Facility Cards */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {facilities.map((f, i) => (
-            <div key={i} className="rounded-2xl p-6 bg-white border border-gray-200">
-              <img src={f.image} alt={f.title} className="aspect-video w-full object-cover rounded-xl mb-4" />
-              <h3 className="text-lg font-bold text-gray-900">{f.title}</h3>
-              <p className="text-sm text-gray-600 mt-1">Pre-school has open door and also offer free trial session in child.</p>
-              <a href="#" className="inline-flex items-center gap-2 mt-3 text-pink-600 font-semibold">
-                <f.icon size={16} />
-                <span>Class Details</span>
-              </a>
+            <div key={i} className={`${f.color} rounded-3xl p-8 text-white shadow-lg hover:shadow-xl transition-shadow`}>
+              <div className="mb-6">
+                {f.icon}
+              </div>
+              <h3 className="text-2xl font-bold mb-4">{f.title}</h3>
+              <p className="text-white/90 leading-relaxed">{f.description}</p>
             </div>
           ))}
         </div>
+      </div>
+      
+      {/* Bottom decorative elements */}
+      <div className="absolute bottom-0 right-0 w-1/4 h-32 bg-orange-100/20 rounded-tl-full"></div>
+      <div className="absolute bottom-10 right-10 w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center">
+        <span className="text-white font-bold">72%</span>
       </div>
     </section>
   );
 }
 
 export default Facilities;
-
-

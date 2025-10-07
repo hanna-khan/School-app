@@ -12,10 +12,10 @@ function Gallery() {
           {[
             'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=900&auto=format&fit=crop',
             'https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=900&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=900&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1519452575417-564c1401ecc0?q=80&w=900&auto=format&fit=crop',
             'https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=900&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1529336953121-ad3d8b4f0f8b?q=80&w=900&auto=format&fit=crop',
             'https://images.unsplash.com/photo-1511988617509-a57c8a288659?q=80&w=900&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1496302664110-128bf4b7c9b7?q=80&w=900&auto=format&fit=crop',
             'https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=900&auto=format&fit=crop',
             'https://images.unsplash.com/photo-1519452575417-564c1401ecc0?q=80&w=900&auto=format&fit=crop',
           ].map((src, i) => (
