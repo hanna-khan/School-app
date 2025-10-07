@@ -18,7 +18,11 @@ function Grades() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {grades.map((g, i) => (
             <div key={i} className="rounded-2xl p-6 bg-pink-50 border border-pink-100">
-              <div className="aspect-video rounded-xl bg-white mb-4" />
+              <img
+                src={`https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=900&auto=format&fit=crop&sig=${i}`}
+                alt={g.title}
+                className="aspect-video w-full object-cover rounded-xl mb-4"
+              />
               <h3 className="text-lg font-bold text-gray-900">{g.title}</h3>
               <p className="text-sm text-gray-600">{g.age}</p>
             </div>

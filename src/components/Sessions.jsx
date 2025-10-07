@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaClock } from 'react-icons/fa';
 
 const sessions = [
   { title: 'Brain Train', time: '8.00am - 10.00am' },
@@ -18,7 +19,9 @@ function Sessions() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {sessions.map((s, i) => (
             <div key={i} className="rounded-2xl p-6 bg-white shadow-sm">
-              <div className="w-12 h-12 rounded-lg bg-pink-500 mb-4" />
+              <div className="w-12 h-12 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center mb-4">
+                <FaClock size={20} />
+              </div>
               <h3 className="text-lg font-bold text-gray-900">{s.title}</h3>
               <p className="mt-1 text-sm text-gray-600">{s.time}</p>
             </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaQuoteLeft } from 'react-icons/fa';
 
 const reviews = [
   { name: 'Rodja Hartmann', role: 'Vecuro, CEO' },
@@ -17,10 +18,11 @@ function Testimonials() {
         <div className="grid md:grid-cols-3 gap-6">
           {reviews.map((r, i) => (
             <div key={i} className="rounded-2xl p-6 bg-white shadow-sm">
-              <div className="w-16 h-16 rounded-full bg-gray-200 mb-4" />
+              <img src={`https://i.pravatar.cc/150?img=${i+10}`} alt={r.name} className="w-16 h-16 rounded-full mb-4 object-cover" />
               <h4 className="font-bold text-gray-900">{r.name}</h4>
               <div className="text-sm text-gray-500">{r.role}</div>
-              <p className="mt-3 text-gray-600">
+              <p className="mt-3 text-gray-600 relative pl-7">
+                <span className="absolute left-0 top-0 text-pink-500"><FaQuoteLeft size={16} /></span>
                 We look forward to developing the long-term relationship with children and parents and will welcome children into our after-school service.
               </p>
             </div>

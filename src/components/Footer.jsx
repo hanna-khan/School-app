@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -26,16 +27,23 @@ function Footer() {
         <div>
           <h4 className="text-white font-semibold">Contact</h4>
           <ul className="mt-4 space-y-2 text-gray-400">
-            <li>+9 555 224 7849</li>
-            <li>info@toddly.com</li>
-            <li>Munich Expresswa 70 Germany, TX 7859</li>
+            <li className="flex items-center gap-2"><FaPhone size={16} /> +9 555 224 7849</li>
+            <li className="flex items-center gap-2"><FaEnvelope size={16} /> info@toddly.com</li>
+            <li className="flex items-center gap-2"><FaMapMarkerAlt size={16} /> Munich Expresswa 70 Germany, TX 7859</li>
           </ul>
         </div>
         <div>
           <h4 className="text-white font-semibold">Instagram</h4>
           <div className="mt-4 grid grid-cols-3 gap-2">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <div key={i} className="aspect-square bg-gray-700 rounded" />
+            {[
+              'https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=400&auto=format&fit=crop',
+              'https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=400&auto=format&fit=crop',
+              'https://images.unsplash.com/photo-1529336953121-ad3d8b4f0f8b?q=80&w=400&auto=format&fit=crop',
+              'https://images.unsplash.com/photo-1519452575417-564c1401ecc0?q=80&w=400&auto=format&fit=crop',
+              'https://images.unsplash.com/photo-1496302664110-128bf4b7c9b7?q=80&w=400&auto=format&fit=crop',
+              'https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=400&auto=format&fit=crop',
+            ].map((src, i) => (
+              <img key={i} src={src} alt="Instagram" className="aspect-square w-full object-cover rounded" />
             ))}
           </div>
         </div>

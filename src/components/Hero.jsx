@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaStar } from 'react-icons/fa';
 
 function Hero() {
   return (
@@ -18,9 +19,15 @@ function Hero() {
           </div>
         </div>
         <div className="relative">
-          <div className="w-full aspect-square rounded-3xl bg-gradient-to-tr from-pink-100 to-blue-100" />
-          <div className="absolute -top-6 -left-6 w-20 h-20 bg-yellow-300 rounded-full opacity-70" />
-          <div className="absolute -bottom-8 -right-8 w-28 h-28 bg-blue-300 rounded-full opacity-60" />
+          <img
+            src="https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=1200&auto=format&fit=crop"
+            alt="Kids learning"
+            className="w-full aspect-square object-cover rounded-3xl"
+          />
+          <div className="absolute -top-6 -left-6 w-14 h-14 bg-yellow-300 rounded-full opacity-90 flex items-center justify-center text-white">
+            <FaStar size={22} />
+          </div>
+          <div className="absolute -bottom-8 -right-8 w-24 h-24 bg-blue-500/80 rounded-full" />
         </div>
       </div>
     </section>
