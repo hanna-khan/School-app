@@ -1,76 +1,101 @@
 import React from 'react';
-import { FaCalendarAlt, FaArrowRight, FaShare } from 'react-icons/fa';
+import { FaCalendarAlt, FaArrowRight, FaMapMarkerAlt } from 'react-icons/fa';
 
 const posts = [
   { 
-    title: 'Learn And Play', 
-    date: '26. September 2025', 
-    image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=900&auto=format&fit=crop',
-    shareColor: 'bg-blue-600'
+    title: 'Annual Science Fair 2025', 
+    date: 'October 28, 2025', 
+    type: 'Event',
+    image: 'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=900&auto=format&fit=crop',
+    description: 'Join us for our exciting Annual Science Fair featuring student projects and experiments.',
+    location: 'Main Hall'
   },
   { 
-    title: 'Indoor Class Rooms', 
-    date: '26. September 2025', 
-    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=900&auto=format&fit=crop',
-    shareColor: 'bg-blue-600'
+    title: 'Parent-Teacher Conference', 
+    date: 'November 5, 2025', 
+    type: 'Meeting',
+    image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=900&auto=format&fit=crop',
+    description: 'Meet with teachers to discuss your child\'s progress and development.',
+    location: 'Classrooms'
   },
   { 
-    title: 'Filled Fun & Games', 
-    date: '26. September 2025', 
-    image: 'https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=900&auto=format&fit=crop',
-    shareColor: 'bg-orange-500'
+    title: 'Winter Sports Day', 
+    date: 'December 10, 2025', 
+    type: 'Event',
+    image: 'https://images.unsplash.com/photo-1611457194403-d3aca4cf9d11?q=80&w=900&auto=format&fit=crop',
+    description: 'An exciting day of sports activities and competitions for all students.',
+    location: 'Sports Field'
   },
 ];
 
 function News() {
   return (
     <section id="news" className="py-20 bg-white relative overflow-hidden">
-      {/* Background decorative element */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-green-100/20 rounded-full blur-3xl"></div>
+      {/* Background decorative elements */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-yellow-100/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-100/20 rounded-full blur-3xl"></div>
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <p className="uppercase tracking-wider text-gray-400 font-semibold text-sm mb-4">OUR NEW</p>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-blue-800">Our News & Article</h2>
+          <p className="uppercase tracking-wider text-blue-600 font-semibold text-sm mb-2">STAY UPDATED</p>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+            News & <span className="text-blue-600">Events</span>
+          </h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            Stay informed about the latest happenings, events, and announcements at our school
+          </p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
           {posts.map((post, i) => (
-            <article key={i} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-              <div className="relative">
-                <img src={post.image} alt={post.title} className="w-full h-64 object-cover" />
-                <button className={`absolute bottom-4 right-4 w-10 h-10 ${post.shareColor} rounded-full flex items-center justify-center hover:opacity-80 transition-opacity`}>
-                  <FaShare size={16} className="text-white" />
-                </button>
+            <article key={i} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-gray-100 group">
+              <div className="relative overflow-hidden">
+                <img 
+                  src={post.image} 
+                  alt={post.title} 
+                  className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500" 
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">
+                    {post.type}
+                  </span>
+                </div>
               </div>
               
               <div className="p-6">
-                <div className="flex items-center gap-2 text-gray-500 text-sm mb-3">
-                  <FaCalendarAlt size={14} />
-                  <span>{post.date}</span>
+                <div className="flex items-center gap-4 text-gray-500 text-sm mb-3">
+                  <div className="flex items-center gap-1">
+                    <FaCalendarAlt size={14} />
+                    <span>{post.date}</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <FaMapMarkerAlt size={14} />
+                    <span>{post.location}</span>
+                  </div>
                 </div>
                 
-                <h3 className="text-xl font-bold text-blue-800 mb-3">{post.title}</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                  {post.title}
+                </h3>
                 
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Pre-School Has Open Door Andosol Offer Free Trial Session In Child.
+                  {post.description}
                 </p>
                 
-                <div className="flex items-center justify-between">
-                  <a href="#" className="flex items-center gap-2 text-gray-700 font-semibold hover:text-orange-500 transition-colors">
-                    <span>Read More</span>
-                    <FaArrowRight size={14} className="text-orange-500" />
-                  </a>
-                </div>
+                <a href="#" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all">
+                  <span>Learn More</span>
+                  <FaArrowRight size={14} />
+                </a>
               </div>
             </article>
           ))}
         </div>
-      </div>
-      
-      {/* Progress indicator */}
-      <div className="absolute bottom-10 right-10 w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center">
-        <span className="text-white font-bold">91%</span>
+
+        <div className="mt-12 text-center">
+          <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-bold hover:shadow-lg transition-all">
+            View All News & Events
+          </button>
+        </div>
       </div>
     </section>
   );
