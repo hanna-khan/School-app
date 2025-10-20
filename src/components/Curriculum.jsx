@@ -12,16 +12,17 @@ function Curriculum() {
   ];
 
   return (
-    <section id="curriculum" className="py-20 bg-white relative overflow-hidden">
+    <section id="curriculum" className="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-100/20 rounded-full blur-2xl"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-orange-100/40 to-pink-100/30 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-purple-100/40 to-blue-100/30 rounded-full blur-2xl"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-yellow-100/20 to-orange-100/20 rounded-full blur-xl"></div>
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <p className="uppercase tracking-wider text-purple-600 font-semibold text-sm mb-2">OUR CURRICULUM</p>
+          <p className="uppercase tracking-wider text-orange-600 font-semibold text-sm mb-2">OUR CURRICULUM</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
-            British <span className="text-purple-600">Curriculum</span> Excellence
+            British <span className="text-orange-600">Curriculum</span> Excellence
           </h2>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
             We follow the prestigious British Curriculum, recognized globally for its rigorous standards 
@@ -30,11 +31,11 @@ function Curriculum() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-3xl">
+          <div className="bg-gradient-to-br from-orange-50 to-yellow-50 p-8 rounded-3xl">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Curriculum Highlights</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-6 h-6 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <span className="text-white text-xs font-bold">✓</span>
                 </div>
                 <div>
@@ -43,7 +44,7 @@ function Curriculum() {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-6 h-6 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <span className="text-white text-xs font-bold">✓</span>
                 </div>
                 <div>
@@ -52,7 +53,7 @@ function Curriculum() {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-6 h-6 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <span className="text-white text-xs font-bold">✓</span>
                 </div>
                 <div>
@@ -61,7 +62,7 @@ function Curriculum() {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-6 h-6 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <span className="text-white text-xs font-bold">✓</span>
                 </div>
                 <div>
@@ -72,7 +73,7 @@ function Curriculum() {
             </ul>
           </div>
 
-          <div className="bg-gradient-to-br from-orange-50 to-yellow-50 p-8 rounded-3xl">
+          <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-3xl">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Assessment & Progress</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
@@ -115,22 +116,6 @@ function Curriculum() {
           </div>
         </div>
 
-        <div className="text-center mb-8">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8">Core Subjects</h3>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-          {subjects.map((subject, index) => (
-            <div key={index} className="group">
-              <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all text-center border border-gray-100 group-hover:-translate-y-2">
-                <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${subject.color} text-white rounded-full mb-3 group-hover:scale-110 transition-transform`}>
-                  {subject.icon}
-                </div>
-                <h4 className="font-bold text-gray-900 text-sm">{subject.name}</h4>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

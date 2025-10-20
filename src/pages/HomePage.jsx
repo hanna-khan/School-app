@@ -2,8 +2,11 @@ import React from 'react';
 import Hero from '../components/Hero';
 import IntroAbout from '../components/IntroAbout';
 import Curriculum from '../components/Curriculum';
-import KeyStages from '../components/KeyStages';
+import STEMRobotics from '../components/STEMRobotics';
 import AdmissionRequirements from '../components/AdmissionRequirements';
+import SchoolFacilities from '../components/SchoolFacilities';
+import Testimonials from '../components/Testimonials';
+import PreschoolClasses from '../components/PreschoolClasses';
 import Gallery from '../components/Gallery';
 import News from '../components/News';
 
@@ -13,8 +16,11 @@ function HomePage() {
       <Hero />
       <IntroAbout />
       <Curriculum />
-      <KeyStages />
+      <STEMRobotics />
       <AdmissionRequirements />
+      <SchoolFacilities />
+      <Testimonials />
+      <PreschoolClasses />
       <Gallery />
       <News />
     </>

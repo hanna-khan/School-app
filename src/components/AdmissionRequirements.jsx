@@ -31,11 +31,9 @@ function AdmissionRequirements() {
 
   const steps = [
     { number: '1', title: 'Submit Application', description: 'Fill out and submit the application form' },
-    { number: '2', title: 'Document Review', description: 'We review your submitted documents' },
-    { number: '3', title: 'Schedule Assessment', description: 'Book an assessment date for your child' },
-    { number: '4', title: 'Interview', description: 'Parent meeting with admissions team' },
-    { number: '5', title: 'Decision', description: 'Receive admission decision within 5 days' },
-    { number: '6', title: 'Enrollment', description: 'Complete enrollment and fee payment' }
+    { number: '2', title: 'Assessment', description: 'Age-appropriate assessment for your child' },
+    { number: '3', title: 'Interview', description: 'Meet with our admissions team' },
+    { number: '4', title: 'Decision', description: 'Receive admission decision within 5 days' }
   ];
 
   return (
@@ -72,7 +70,7 @@ function AdmissionRequirements() {
         {/* Admission Process Steps */}
         <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8 md:p-12 mb-12">
           <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Admission Process</h3>
-          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {steps.map((step, index) => (
               <div key={index} className="relative">
                 <div className="bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition-shadow h-full">
@@ -90,66 +88,6 @@ function AdmissionRequirements() {
           </div>
         </div>
 
-        {/* Age Requirements */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-gradient-to-br from-orange-50 to-yellow-50 p-8 rounded-3xl">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Age Requirements</h3>
-            <div className="space-y-4">
-              <div className="flex justify-between items-center bg-white p-4 rounded-xl">
-                <span className="font-semibold text-gray-900">Pre-Kindergarten</span>
-                <span className="text-orange-600 font-bold">3 years old</span>
-              </div>
-              <div className="flex justify-between items-center bg-white p-4 rounded-xl">
-                <span className="font-semibold text-gray-900">Kindergarten</span>
-                <span className="text-orange-600 font-bold">4-5 years old</span>
-              </div>
-              <div className="flex justify-between items-center bg-white p-4 rounded-xl">
-                <span className="font-semibold text-gray-900">Year 1</span>
-                <span className="text-orange-600 font-bold">5-6 years old</span>
-              </div>
-              <div className="flex justify-between items-center bg-white p-4 rounded-xl">
-                <span className="font-semibold text-gray-900">Higher Grades</span>
-                <span className="text-orange-600 font-bold">Contact us</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-br from-green-50 to-teal-50 p-8 rounded-3xl">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Important Information</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-white text-xs">✓</span>
-                </div>
-                <span className="text-gray-700">Applications accepted year-round</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-white text-xs">✓</span>
-                </div>
-                <span className="text-gray-700">Limited spots available per class</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-white text-xs">✓</span>
-                </div>
-                <span className="text-gray-700">Sibling discounts available</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-white text-xs">✓</span>
-                </div>
-                <span className="text-gray-700">Financial aid programs offered</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-white text-xs">✓</span>
-                </div>
-                <span className="text-gray-700">School tours available by appointment</span>
-              </li>
-            </ul>
-          </div>
-        </div>
 
         {/* Call to Action */}
         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 md:p-12 text-center text-white">
@@ -163,7 +101,7 @@ function AdmissionRequirements() {
               Apply Now
             </button>
             <button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white/10 transition-colors">
-              Schedule a Tour
+              Learn More
             </button>
           </div>
         </div>

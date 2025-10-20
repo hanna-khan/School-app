@@ -1,38 +1,97 @@
 import React from 'react';
-import { FaQuoteLeft } from 'react-icons/fa';
 
-const reviews = [
-  { name: 'Rodja Hartmann', role: 'Vecuro, CEO' },
-  { name: 'parker jonson', role: 'google CEO' },
-  { name: 'Mehadi Hassan', role: 'InsightTheme CEO' },
-];
+const Testimonials = () => {
+  const testimonials = [
+    {
+      id: 1,
+      name: "Blex Aster",
+      title: "Google CEO",
+      text: "Pre-School Has Open Door Andiso Offer Free Trial Sessionin Child. Mea Omneque Modo Alterum Nou Hones",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+    },
+    {
+      id: 2,
+      name: "Alex Aster", 
+      title: "Google CEO",
+      text: "Pre-School Has Open Door Andiso Offer Free Trial Sessionin Child. Mea Omneque Modo Alterum Nou Hones",
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
+    }
+  ];
 
-function Testimonials() {
   return (
-    <section id="testimonials" className="py-16 bg-pink-50">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-10">
-          <p className="uppercase tracking-wider text-pink-600 font-semibold">faq feedback</p>
-          <h2 className="mt-2 text-3xl md:text-4xl font-extrabold text-gray-900">Customer Feedback For school</h2>
+    <section className="py-16 bg-gradient-to-br from-orange-600 to-pink-600 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 right-0 w-64 h-64 opacity-20">
+          <img 
+            src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=400&fit=crop&crop=face" 
+            alt="Background decoration"
+            className="w-full h-full object-cover rounded-full blur-sm"
+          />
         </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {reviews.map((r, i) => (
-            <div key={i} className="rounded-2xl p-6 bg-white shadow-sm">
-              <img src={`https://i.pravatar.cc/150?img=${i+10}`} alt={r.name} className="w-16 h-16 rounded-full mb-4 object-cover" />
-              <h4 className="font-bold text-gray-900">{r.name}</h4>
-              <div className="text-sm text-gray-500">{r.role}</div>
-              <p className="mt-3 text-gray-600 relative pl-7">
-                <span className="absolute left-0 top-0 text-pink-500"><FaQuoteLeft size={16} /></span>
-                We look forward to developing the long-term relationship with children and parents and will welcome children into our after-school service.
-              </p>
+        <div className="absolute top-4 right-4 w-32 h-32 opacity-30">
+          <img 
+            src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=200&h=200&fit=crop&crop=face" 
+            alt="Child on bike"
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <div className="text-white text-sm uppercase tracking-wide font-serif mb-2">
+            TESTIMONIALS
+          </div>
+          <h2 className="text-4xl font-bold text-white">
+            Our Happy Customers
+          </h2>
+        </div>
+
+        {/* Testimonial Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {testimonials.map((testimonial) => (
+            <div key={testimonial.id} className="bg-white rounded-xl p-8 shadow-xl relative">
+              <div className="flex items-start space-x-4">
+                {/* Profile Image */}
+                <div className="flex-shrink-0">
+                  <img 
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-16 h-16 rounded-full object-cover"
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="flex-1">
+                  <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                    "{testimonial.text}"
+                  </p>
+                  
+                  <div className="space-y-1">
+                    <h4 className="font-bold text-gray-900 text-sm">
+                      {testimonial.name}
+                    </h4>
+                    <p className="text-gray-500 text-sm">
+                      {testimonial.title}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Decorative quotation marks */}
+              <div className="absolute bottom-4 right-6">
+                <div className="text-orange-600 text-6xl font-serif leading-none opacity-30">
+                  "
+                </div>
+              </div>
             </div>
           ))}
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Testimonials;
-
-
