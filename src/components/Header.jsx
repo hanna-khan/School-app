@@ -1,29 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaPhone, FaClock, FaFacebook, FaLinkedin, FaYoutube, FaSearch } from 'react-icons/fa';
+import { FaPhone, FaClock, FaFacebook, FaLinkedin, FaYoutube, FaSearch, FaTimes } from 'react-icons/fa';
 
 function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-purple-600 text-white py-2">
+      <div className="bg-gradient-to-r from-slate-800 to-slate-700 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between text-sm">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-2 md:gap-6">
             <div className="flex items-center gap-2">
-              <FaPhone size={12} className="text-gray-300" />
-              <span>Phone: +1 333 456 888</span>
+              <FaPhone size={12} className="text-slate-300" />
+              <span className="hidden sm:inline">Phone: +1 333 456 888</span>
+              <span className="sm:hidden">+1 333 456 888</span>
             </div>
             <div className="flex items-center gap-2">
-              <FaClock size={12} className="text-gray-300" />
-              <span>Opening Time: 9:30am-5:30pm</span>
+              <FaClock size={12} className="text-slate-300" />
+              <span className="hidden md:inline">Opening Time: 9:30am-5:30pm</span>
+              <span className="md:hidden">9:30am-5:30pm</span>
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <span>Follow Us:</span>
+            <span className="hidden sm:inline">Follow Us:</span>
             <div className="flex gap-2">
-              <FaFacebook size={14} className="bg-purple-700 rounded-full p-1" />
-              <FaLinkedin size={14} className="bg-purple-700 rounded-full p-1" />
-              <FaYoutube size={14} className="bg-purple-700 rounded-full p-1" />
+              <FaFacebook size={28} className="bg-slate-600 rounded-full p-2 hover:bg-blue-600 transition-colors cursor-pointer" />
+              <FaLinkedin size={28} className="bg-slate-600 rounded-full p-2 hover:bg-blue-700 transition-colors cursor-pointer" />
+              <FaYoutube size={28} className="bg-slate-600 rounded-full p-2 hover:bg-red-600 transition-colors cursor-pointer" />
             </div>
           </div>
         </div>
@@ -32,34 +40,95 @@ function Header() {
       {/* Main Header */}
       <header className="w-full bg-white sticky top-0 z-50 border-b">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-400 flex items-center justify-center">
-              <span className="text-white font-bold text-lg">T</span>
-            </div>
-            <span className="text-2xl font-bold text-purple-800">Toddly</span>
+          <Link to="/" className="flex items-center gap-2 md:gap-3">
+            <img 
+              src="/Logo-4.png" 
+              alt="Endeavour School Logo" 
+              className="w-10 h-10 md:w-12 md:h-12 object-contain"
+            />
+            <span className="text-xl md:text-2xl font-bold text-slate-800">Endeavour</span>
           </Link>
           
-          <nav className="hidden lg:flex items-center gap-8 text-sm font-semibold text-gray-700">
-            <Link to="/" className="bg-purple-600 text-white px-4 py-2 rounded-full">HOME</Link>
-            <Link to="/about" className="hover:text-purple-600">ABOUT</Link>
-            <Link to="/pages" className="hover:text-purple-600">PAGES</Link>
-            <Link to="/shop" className="hover:text-purple-600">SHOP</Link>
-            <Link to="/blog" className="hover:text-purple-600">BLOG</Link>
-            <Link to="/contact" className="hover:text-purple-600">CONTACT</Link>
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
+            <Link to="/" className="bg-gradient-to-r from-slate-700 to-slate-800 text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition-all">HOME</Link>
+            <Link to="/about" className="hover:text-slate-800 hover:font-bold transition-all">ABOUT</Link>
+            <Link to="/pages" className="hover:text-slate-800 hover:font-bold transition-all">PAGES</Link>
+            <Link to="/shop" className="hover:text-slate-800 hover:font-bold transition-all">SHOP</Link>
+            <Link to="/blog" className="hover:text-slate-800 hover:font-bold transition-all">BLOG</Link>
+            <Link to="/contact" className="hover:text-slate-800 hover:font-bold transition-all">CONTACT</Link>
           </nav>
           
-          <div className="flex items-center gap-3">
-            <button className="w-10 h-10 rounded-full border-2 border-dashed border-gray-400 flex items-center justify-center">
-              <FaSearch size={16} className="text-gray-600" />
+          <div className="flex items-center gap-2 md:gap-3">
+            <button className="w-8 h-8 md:w-10 md:h-10 rounded-lg border-2 border-slate-300 flex items-center justify-center hover:border-slate-500 hover:bg-slate-50 transition-all">
+              <FaSearch size={14} className="md:w-4 md:h-4 text-slate-600" />
             </button>
-            <Link to="/admissions" className="bg-orange-500 text-white px-6 py-2 rounded-full font-semibold border-2 border-dashed border-orange-600">
-              ADMISSION
+            <Link to="/admissions" className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 md:px-6 py-2 rounded-lg font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all text-sm md:text-base">
+              <span className="hidden sm:inline">ADMISSION</span>
+              <span className="sm:hidden">ADMIT</span>
             </Link>
-            <button className="lg:hidden p-2">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
+            <button 
+              onClick={toggleMobileMenu}
+              className="lg:hidden p-2 hover:bg-slate-100 rounded-lg transition-colors"
+            >
+              {isMobileMenuOpen ? (
+                <FaTimes size={20} className="text-slate-700" />
+              ) : (
+                <svg className="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
             </button>
+          </div>
+        </div>
+        
+        {/* Mobile Menu */}
+        <div className={`lg:hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
+          <div className="bg-white border-t border-slate-200 shadow-lg">
+            <nav className="px-4 py-4 space-y-2">
+              <Link 
+                to="/" 
+                className="block w-full bg-gradient-to-r from-slate-700 to-slate-800 text-white px-6 py-3 rounded-lg shadow-md text-center font-semibold"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                HOME
+              </Link>
+              <Link 
+                to="/about" 
+                className="block w-full text-slate-700 px-6 py-3 rounded-lg hover:bg-slate-50 hover:text-slate-800 transition-all"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                ABOUT
+              </Link>
+              <Link 
+                to="/pages" 
+                className="block w-full text-slate-700 px-6 py-3 rounded-lg hover:bg-slate-50 hover:text-slate-800 transition-all"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                PAGES
+              </Link>
+              <Link 
+                to="/shop" 
+                className="block w-full text-slate-700 px-6 py-3 rounded-lg hover:bg-slate-50 hover:text-slate-800 transition-all"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                SHOP
+              </Link>
+              <Link 
+                to="/blog" 
+                className="block w-full text-slate-700 px-6 py-3 rounded-lg hover:bg-slate-50 hover:text-slate-800 transition-all"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                BLOG
+              </Link>
+              <Link 
+                to="/contact" 
+                className="block w-full text-slate-700 px-6 py-3 rounded-lg hover:bg-slate-50 hover:text-slate-800 transition-all"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                CONTACT
+              </Link>
+            </nav>
           </div>
         </div>
         

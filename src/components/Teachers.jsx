@@ -26,28 +26,28 @@ const teachers = [
 
 function Teachers() {
   return (
-    <section id="teachers" className="py-20 bg-gradient-to-br from-orange-50 to-pink-50 relative overflow-hidden">
+    <section id="teachers" className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full">
-        <div className="absolute top-10 left-10 w-20 h-20 bg-yellow-200/30 rounded-full blur-lg"></div>
-        <div className="absolute top-20 right-20 w-16 h-16 bg-pink-200/30 rounded-full blur-md"></div>
+        <div className="absolute top-10 left-10 w-20 h-20 bg-blue-200/30 rounded-full blur-lg"></div>
+        <div className="absolute top-20 right-20 w-16 h-16 bg-slate-200/30 rounded-full blur-md"></div>
         <div className="absolute bottom-20 left-1/4 w-24 h-24 bg-blue-200/30 rounded-full blur-xl"></div>
       </div>
       
       {/* Decorative flags */}
       <div className="absolute top-0 left-0 w-full h-8 flex">
-        <div className="w-1/6 bg-purple-300"></div>
-        <div className="w-1/6 bg-pink-300"></div>
         <div className="w-1/6 bg-blue-300"></div>
-        <div className="w-1/6 bg-green-300"></div>
-        <div className="w-1/6 bg-yellow-300"></div>
-        <div className="w-1/6 bg-pink-300"></div>
+        <div className="w-1/6 bg-slate-300"></div>
+        <div className="w-1/6 bg-blue-300"></div>
+        <div className="w-1/6 bg-slate-300"></div>
+        <div className="w-1/6 bg-blue-300"></div>
+        <div className="w-1/6 bg-slate-300"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 relative z-10 pt-8">
         <div className="text-center mb-16">
-          <p className="uppercase tracking-wider text-purple-600 font-bold text-sm mb-4">EXPERT TEAM</p>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">Meet Our teacher</h2>
+          <p className="uppercase tracking-wider text-blue-600 font-bold text-sm mb-4">EXPERT TEAM</p>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900">Meet Our teacher</h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -59,14 +59,14 @@ function Teachers() {
                   alt={teacher.name}
                   className="w-full h-48 object-cover rounded-2xl"
                 />
-                <button className="absolute bottom-2 right-2 w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition-colors">
+                <button className="absolute bottom-2 right-2 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
                   <FaShare size={14} className="text-white" />
                 </button>
               </div>
               
-              <h3 className="text-xl font-bold text-gray-900 mb-2">{teacher.name}</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">{teacher.name}</h3>
               <p className={`text-sm font-medium ${
-                i === 3 ? 'text-orange-500' : 'text-gray-600'
+                i === 3 ? 'text-blue-600' : 'text-slate-600'
               }`}>
                 {teacher.role}
               </p>
@@ -76,7 +76,7 @@ function Teachers() {
       </div>
       
       {/* Progress indicator */}
-      <div className="absolute bottom-10 right-10 w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center">
+      <div className="absolute bottom-10 right-10 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
         <span className="text-white font-bold">61%</span>
       </div>
     </section>

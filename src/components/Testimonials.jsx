@@ -14,12 +14,12 @@ const Testimonials = () => {
       name: "Alex Aster", 
       title: "Google CEO",
       text: "Pre-School Has Open Door Andiso Offer Free Trial Sessionin Child. Mea Omneque Modo Alterum Nou Hones",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
+   image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
     }
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-orange-600 to-pink-600 relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-br from-slate-800 to-blue-800 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-64 h-64 opacity-20">
@@ -82,7 +82,7 @@ const Testimonials = () => {
 
               {/* Decorative quotation marks */}
               <div className="absolute bottom-4 right-6">
-                <div className="text-orange-600 text-6xl font-serif leading-none opacity-30">
+                <div className="text-blue-400 text-6xl font-serif leading-none opacity-30">
                   "
                 </div>
               </div>

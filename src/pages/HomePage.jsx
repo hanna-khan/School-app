@@ -9,6 +9,7 @@ import Testimonials from '../components/Testimonials';
 import PreschoolClasses from '../components/PreschoolClasses';
 import Gallery from '../components/Gallery';
 import News from '../components/News';
+import ClosingSection from '../components/ClosingSection';
 
 function HomePage() {
   return (
@@ -23,6 +24,7 @@ function HomePage() {
       <PreschoolClasses />
       <Gallery />
       <News />
+      <ClosingSection />
     </>
   );
 }
