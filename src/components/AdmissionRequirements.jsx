@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaClipboardList, FaFileAlt, FaUserCheck, FaCalendarCheck } from 'react-icons/fa';
 
 function AdmissionRequirements() {
   const steps = [

@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaBook, FaFlask, FaCalculator, FaGlobe, FaPalette, FaMusic } from 'react-icons/fa';
 
 function Curriculum() {
   return (
