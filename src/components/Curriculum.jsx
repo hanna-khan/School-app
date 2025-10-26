@@ -2,15 +2,6 @@ import React from 'react';
 import { FaBook, FaFlask, FaCalculator, FaGlobe, FaPalette, FaMusic } from 'react-icons/fa';
 
 function Curriculum() {
-  const subjects = [
-    { icon: <FaBook size={28} />, name: 'English', color: 'from-red-500 to-pink-500' },
-    { icon: <FaCalculator size={28} />, name: 'Mathematics', color: 'from-blue-500 to-indigo-600' },
-    { icon: <FaFlask size={28} />, name: 'Science', color: 'from-green-500 to-teal-500' },
-    { icon: <FaGlobe size={28} />, name: 'Humanities', color: 'from-yellow-500 to-orange-500' },
-    { icon: <FaPalette size={28} />, name: 'Arts & Design', color: 'from-purple-500 to-pink-500' },
-    { icon: <FaMusic size={28} />, name: 'Music & Drama', color: 'from-indigo-500 to-blue-500' }
-  ];
-
   return (
     <section id="curriculum" className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
       {/* Decorative elements */}

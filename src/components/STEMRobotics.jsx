@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaRobot, FaMicrochip, FaCode, FaCogs, FaRocket, FaLaptopCode } from 'react-icons/fa';
+import { FaRobot, FaMicrochip, FaCode, FaRocket } from 'react-icons/fa';
 
 function STEMRobotics() {
   const stemPrograms = [

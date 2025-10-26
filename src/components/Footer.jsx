@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaLinkedin, FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -214,13 +214,13 @@ function Footer() {
 
             {/* Legal Links */}
             <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8">
-              <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors duration-300 text-sm md:text-lg font-medium">
+              <a href="/terms" className="text-gray-300 hover:text-blue-400 transition-colors duration-300 text-sm md:text-lg font-medium">
                 Terms & Conditions
               </a>
-              <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors duration-300 text-sm md:text-lg font-medium">
+              <a href="/privacy" className="text-gray-300 hover:text-blue-400 transition-colors duration-300 text-sm md:text-lg font-medium">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors duration-300 text-sm md:text-lg font-medium">
+              <a href="/cookies" className="text-gray-300 hover:text-blue-400 transition-colors duration-300 text-sm md:text-lg font-medium">
                 Cookie Policy
               </a>
             </div>

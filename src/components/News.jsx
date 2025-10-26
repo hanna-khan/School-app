@@ -82,7 +82,7 @@ function News() {
                   {post.description}
                 </p>
                 
-                <a href="#" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all">
+                <a href="/news" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all">
                   <span>Learn More</span>
                   <FaArrowRight size={14} />
                 </a>

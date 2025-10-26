@@ -2,33 +2,6 @@ import React from 'react';
 import { FaClipboardList, FaFileAlt, FaUserCheck, FaCalendarCheck } from 'react-icons/fa';
 
 function AdmissionRequirements() {
-  const requirements = [
-    {
-      icon: <FaClipboardList size={28} />,
-      title: 'Application Form',
-      description: 'Complete the online or paper application form with accurate information',
-      color: 'from-blue-500 to-indigo-600'
-    },
-    {
-      icon: <FaFileAlt size={28} />,
-      title: 'Required Documents',
-      description: 'Birth certificate, passport photos, previous school records, and immunization records',
-      color: 'from-green-500 to-teal-600'
-    },
-    {
-      icon: <FaUserCheck size={28} />,
-      title: 'Assessment',
-      description: 'Age-appropriate assessment to understand your child\'s learning level',
-      color: 'from-purple-500 to-pink-600'
-    },
-    {
-      icon: <FaCalendarCheck size={28} />,
-      title: 'Interview',
-      description: 'Meet with our admissions team to discuss your child\'s needs and our programs',
-      color: 'from-orange-500 to-red-600'
-    }
-  ];
-
   const steps = [
     { number: '1', title: 'Submit Application', description: 'Fill out and submit the application form' },
     { number: '2', title: 'Assessment', description: 'Age-appropriate assessment for your child' },
