@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGraduationCap, FaBook, FaFlask, FaCalculator, FaGlobe, FaPalette, FaMusic, FaRobot, FaGamepad, FaMicrophone, FaTheaterMasks, FaPhone, FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGraduationCap, FaBook, FaFlask, FaCalculator, FaGlobe, FaPalette, FaRobot, FaGamepad, FaMicrophone, FaTheaterMasks, FaPhone, FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa';
 
 function Courses() {
   const keyStages = [
