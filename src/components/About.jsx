@@ -193,11 +193,7 @@ function About() {
             </div>
           </div>
           
-          <div className="text-center mt-8">
-            <button className="bg-gradient-to-r from-blue-600 to-slate-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
-              Schedule a Visit
-            </button>
-          </div>
+          
         </div>
       </div>
     </section>

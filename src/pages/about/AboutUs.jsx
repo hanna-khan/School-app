@@ -132,7 +132,7 @@ function AboutUs() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
               {coreValues.map((value, index) => (
                 <div key={index} className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center group">
-                  <div className="text-4xl mb-3">{value.emoji}</div>
+                  {/* <div className="text-4xl mb-3">{value.emoji}</div> */}
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-slate-700 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                     {value.icon}
                   </div>
@@ -196,11 +196,7 @@ function AboutUs() {
               </div>
             </div>
             
-            <div className="text-center mt-8">
-              <button className="bg-gradient-to-r from-blue-600 to-slate-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
-                Schedule a Visit
-              </button>
-            </div>
+            
           </div>
       </div>
     </section>

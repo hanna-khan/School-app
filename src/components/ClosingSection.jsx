@@ -46,14 +46,6 @@ function ClosingSection() {
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button className="bg-white text-slate-800 px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all">
-                Join Our Community
-              </button>
-              <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-slate-800 transition-all">
-                Schedule a Visit
-              </button>
-            </div>
           </div>
         </div>
       </div>

@@ -233,15 +233,6 @@ export default function Admissions() {
               <p className="text-slate-600">C-2, Block D, North Nazimabad, Karachi</p>
             </div>
           </div>
-          
-          <div className="flex flex-wrap justify-center gap-4">
-            <button className="bg-gradient-to-r from-blue-600 to-slate-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
-              Schedule a Visit
-            </button>
-            <button className="bg-transparent border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-600 hover:text-white transition-all duration-300">
-              Download Application Form
-            </button>
-          </div>
       </div>
     </section>
     </div>
