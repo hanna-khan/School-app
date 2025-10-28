@@ -42,7 +42,7 @@ function Header() {
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 md:gap-3">
             <img 
-              src="/Logo-4.png" 
+              src="/Logo-3.png" 
               alt="Endeavour School Logo" 
               className="w-10 h-10 md:w-12 md:h-12 object-contain"
             />

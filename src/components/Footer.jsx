@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 function Footer() {
@@ -23,7 +24,7 @@ function Footer() {
             <div className="sm:col-span-2 lg:col-span-1 space-y-6 md:space-y-8">
               <div className="flex items-center gap-3 md:gap-4">
                 <img 
-                  src="/Logo-4.png" 
+                  src="/Logo-3.png" 
                   alt="Endeavour School Logo" 
                   className="w-12 h-12 md:w-16 md:h-16 object-contain"
                 />
@@ -100,14 +101,14 @@ function Footer() {
                     { name: 'Gallery', href: '/gallery' },
                     { name: 'Contact Us', href: '/contact' }
                   ].map((link, index) => (
-                    <a 
+                    <Link 
                       key={index}
-                      href={link.href} 
+                      to={link.href} 
                       className="text-gray-300 hover:text-blue-400 transition-all duration-300 flex items-center gap-2 md:gap-3 group"
                     >
                       <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-gradient-to-r from-blue-500 to-slate-600 rounded-full group-hover:scale-150 transition-transform"></div>
                       <span className="text-sm md:text-lg group-hover:translate-x-2 transition-transform">{link.name}</span>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -129,14 +130,14 @@ function Footer() {
                     { name: 'STEM & Robotics', href: '/courses' },
                     { name: 'Extra Curricular', href: '/courses' }
                   ].map((link, index) => (
-                    <a 
+                    <Link 
                       key={index}
-                      href={link.href} 
+                      to={link.href} 
                       className="text-gray-300 hover:text-blue-400 transition-all duration-300 flex items-center gap-2 md:gap-3 group"
                     >
                       <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-gradient-to-r from-blue-500 to-slate-600 rounded-full group-hover:scale-150 transition-transform"></div>
                       <span className="text-sm md:text-lg group-hover:translate-x-2 transition-transform">{link.name}</span>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
