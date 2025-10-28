@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FaPhone, FaClock, FaFacebook, FaLinkedin, FaYoutube, FaSearch, FaTimes } from 'react-icons/fa';
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  // Function to check if a route is active
+  const isActive = (path) => {
+    if (path === '/') {
+      return location.pathname === '/';
+    }
+    return location.pathname.startsWith(path);
   };
 
   return (
@@ -51,11 +60,56 @@ function Header() {
           
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-700">
-            <Link to="/" className="bg-gradient-to-r from-slate-700 to-slate-800 text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition-all">HOME</Link>
-            <Link to="/about" className="hover:text-slate-800 hover:font-bold transition-all">ABOUT</Link>
-            <Link to="/courses" className="hover:text-slate-800 hover:font-bold transition-all">OUR PROGRAMS</Link>
-            <Link to="/gallery" className="hover:text-slate-800 hover:font-bold transition-all">GALLERY</Link>
-            <Link to="/contact" className="hover:text-slate-800 hover:font-bold transition-all">CONTACT</Link>
+            <Link 
+              to="/" 
+              className={`px-6 py-2 rounded-lg transition-all ${
+                isActive('/') 
+                  ? 'bg-gradient-to-r from-slate-700 to-slate-800 text-white shadow-md' 
+                  : 'hover:text-slate-800 hover:font-bold hover:bg-slate-50'
+              }`}
+            >
+              HOME
+            </Link>
+            <Link 
+              to="/about" 
+              className={`px-6 py-2 rounded-lg transition-all ${
+                isActive('/about') 
+                  ? 'bg-gradient-to-r from-slate-700 to-slate-800 text-white shadow-md' 
+                  : 'hover:text-slate-800 hover:font-bold hover:bg-slate-50'
+              }`}
+            >
+              ABOUT
+            </Link>
+            <Link 
+              to="/courses" 
+              className={`px-6 py-2 rounded-lg transition-all ${
+                isActive('/courses') 
+                  ? 'bg-gradient-to-r from-slate-700 to-slate-800 text-white shadow-md' 
+                  : 'hover:text-slate-800 hover:font-bold hover:bg-slate-50'
+              }`}
+            >
+              OUR PROGRAMS
+            </Link>
+            <Link 
+              to="/gallery" 
+              className={`px-6 py-2 rounded-lg transition-all ${
+                isActive('/gallery') 
+                  ? 'bg-gradient-to-r from-slate-700 to-slate-800 text-white shadow-md' 
+                  : 'hover:text-slate-800 hover:font-bold hover:bg-slate-50'
+              }`}
+            >
+              GALLERY
+            </Link>
+            <Link 
+              to="/contact" 
+              className={`px-6 py-2 rounded-lg transition-all ${
+                isActive('/contact') 
+                  ? 'bg-gradient-to-r from-slate-700 to-slate-800 text-white shadow-md' 
+                  : 'hover:text-slate-800 hover:font-bold hover:bg-slate-50'
+              }`}
+            >
+              CONTACT
+            </Link>
           </nav>
           
           <div className="flex items-center gap-2 md:gap-3">
@@ -87,35 +141,55 @@ function Header() {
             <nav className="px-4 py-4 space-y-2">
               <Link 
                 to="/" 
-                className="block w-full bg-gradient-to-r from-slate-700 to-slate-800 text-white px-6 py-3 rounded-lg shadow-md text-center font-semibold"
+                className={`block w-full px-6 py-3 rounded-lg text-center font-semibold transition-all ${
+                  isActive('/') 
+                    ? 'bg-gradient-to-r from-slate-700 to-slate-800 text-white shadow-md' 
+                    : 'text-slate-700 hover:bg-slate-50 hover:text-slate-800'
+                }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 HOME
               </Link>
               <Link 
                 to="/about" 
-                className="block w-full text-slate-700 px-6 py-3 rounded-lg hover:bg-slate-50 hover:text-slate-800 transition-all"
+                className={`block w-full px-6 py-3 rounded-lg transition-all ${
+                  isActive('/about') 
+                    ? 'bg-gradient-to-r from-slate-700 to-slate-800 text-white shadow-md' 
+                    : 'text-slate-700 hover:bg-slate-50 hover:text-slate-800'
+                }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 ABOUT
               </Link>
               <Link 
                 to="/courses" 
-                className="block w-full text-slate-700 px-6 py-3 rounded-lg hover:bg-slate-50 hover:text-slate-800 transition-all"
+                className={`block w-full px-6 py-3 rounded-lg transition-all ${
+                  isActive('/courses') 
+                    ? 'bg-gradient-to-r from-slate-700 to-slate-800 text-white shadow-md' 
+                    : 'text-slate-700 hover:bg-slate-50 hover:text-slate-800'
+                }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 OUR PROGRAMS
               </Link>
               <Link 
                 to="/gallery" 
-                className="block w-full text-slate-700 px-6 py-3 rounded-lg hover:bg-slate-50 hover:text-slate-800 transition-all"
+                className={`block w-full px-6 py-3 rounded-lg transition-all ${
+                  isActive('/gallery') 
+                    ? 'bg-gradient-to-r from-slate-700 to-slate-800 text-white shadow-md' 
+                    : 'text-slate-700 hover:bg-slate-50 hover:text-slate-800'
+                }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 GALLERY
               </Link>
               <Link 
                 to="/contact" 
-                className="block w-full text-slate-700 px-6 py-3 rounded-lg hover:bg-slate-50 hover:text-slate-800 transition-all"
+                className={`block w-full px-6 py-3 rounded-lg transition-all ${
+                  isActive('/contact') 
+                    ? 'bg-gradient-to-r from-slate-700 to-slate-800 text-white shadow-md' 
+                    : 'text-slate-700 hover:bg-slate-50 hover:text-slate-800'
+                }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 CONTACT
