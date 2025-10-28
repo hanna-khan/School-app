@@ -17,13 +17,13 @@ function Header() {
           <div className="flex items-center gap-2 md:gap-6">
             <div className="flex items-center gap-2">
               <FaPhone size={12} className="text-slate-300" />
-              <span className="hidden sm:inline">Phone: +1 333 456 888</span>
-              <span className="sm:hidden">+1 333 456 888</span>
+              <span className="hidden sm:inline">Phone: 021-33393395</span>
+              <span className="sm:hidden">021-33393395</span>
             </div>
             <div className="flex items-center gap-2">
               <FaClock size={12} className="text-slate-300" />
-              <span className="hidden md:inline">Opening Time: 9:30am-5:30pm</span>
-              <span className="md:hidden">9:30am-5:30pm</span>
+              <span className="hidden md:inline">Opening Time: 8:00am-3:00pm</span>
+              <span className="md:hidden">8:00am-3:00pm</span>
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -50,12 +50,12 @@ function Header() {
           </Link>
           
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
+          <nav className="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-700">
             <Link to="/" className="bg-gradient-to-r from-slate-700 to-slate-800 text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition-all">HOME</Link>
             <Link to="/about" className="hover:text-slate-800 hover:font-bold transition-all">ABOUT</Link>
-            <Link to="/pages" className="hover:text-slate-800 hover:font-bold transition-all">PAGES</Link>
-            <Link to="/shop" className="hover:text-slate-800 hover:font-bold transition-all">SHOP</Link>
-            <Link to="/blog" className="hover:text-slate-800 hover:font-bold transition-all">BLOG</Link>
+            <Link to="/courses" className="hover:text-slate-800 hover:font-bold transition-all">COURSES</Link>
+            <Link to="/education" className="hover:text-slate-800 hover:font-bold transition-all">EDUCATION</Link>
+            <Link to="/gallery" className="hover:text-slate-800 hover:font-bold transition-all">GALLERY</Link>
             <Link to="/contact" className="hover:text-slate-800 hover:font-bold transition-all">CONTACT</Link>
           </nav>
           
@@ -101,25 +101,25 @@ function Header() {
                 ABOUT
               </Link>
               <Link 
-                to="/pages" 
+                to="/courses" 
                 className="block w-full text-slate-700 px-6 py-3 rounded-lg hover:bg-slate-50 hover:text-slate-800 transition-all"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                PAGES
+                COURSES
               </Link>
               <Link 
-                to="/shop" 
+                to="/education" 
                 className="block w-full text-slate-700 px-6 py-3 rounded-lg hover:bg-slate-50 hover:text-slate-800 transition-all"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                SHOP
+                EDUCATION
               </Link>
               <Link 
-                to="/blog" 
+                to="/gallery" 
                 className="block w-full text-slate-700 px-6 py-3 rounded-lg hover:bg-slate-50 hover:text-slate-800 transition-all"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                BLOG
+                GALLERY
               </Link>
               <Link 
                 to="/contact" 

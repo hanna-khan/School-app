@@ -3,10 +3,10 @@ import { FaGraduationCap, FaUsers, FaBookOpen, FaAward } from 'react-icons/fa';
 
 function IntroAbout() {
   const features = [
-    { icon: <FaGraduationCap size={32} />, title: 'Quality Education', description: 'British curriculum with experienced teachers' },
-    { icon: <FaUsers size={32} />, title: 'Small Class Sizes', description: 'Individual attention for every student' },
-    { icon: <FaBookOpen size={32} />, title: 'Modern Resources', description: 'State-of-the-art learning facilities' },
-    { icon: <FaAward size={32} />, title: 'Excellence', description: 'Outstanding academic achievements' }
+    { icon: <FaGraduationCap size={32} />, title: 'Cambridge Curriculum', description: 'British curriculum with experienced teachers' },
+    { icon: <FaUsers size={32} />, title: 'Qualified Teachers', description: 'Highly qualified and passionate educators' },
+    { icon: <FaBookOpen size={32} />, title: 'Modern Facilities', description: 'State-of-the-art learning environment' },
+    { icon: <FaAward size={32} />, title: 'Holistic Growth', description: 'Academic, social, and emotional development' }
   ];
 
   return (
@@ -33,9 +33,9 @@ function IntroAbout() {
             About <span className="text-blue-600">Endeavour Academy</span>
           </h2>
           <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">
-            At Endeavour Academy, we believe that education is more than academics — it's a journey of 
-            growth, curiosity, and character building. Our purpose is simple: to nurture confident, creative, 
-            and compassionate learners who are ready to shape the future.
+            At Endeavour Academy, we believe education is more than memorizing facts — it's about 
+            nurturing minds, character, and creativity. Located in North Nazimabad, Karachi, we offer a dynamic 
+            learning environment that blends the British (Cambridge) curriculum with modern, activity-based education.
           </p>
         </div>
 
@@ -86,12 +86,12 @@ function IntroAbout() {
           <div className="space-y-6 md:space-y-8 order-1 lg:order-2">
             <div>
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
-                Our <span className="text-blue-600">Foundation</span>
+                Why Choose <span className="text-blue-600">Endeavour?</span>
               </h3>
               <p className="text-slate-600 leading-relaxed text-base md:text-lg">
-                With a team of passionate educators, a safe and inspiring environment, and a curriculum that 
-                balances academic excellence with personal development, Endeavour Academy is where every 
-                child's potential begins to shine.
+                Our classrooms are spaces where curiosity thrives, teachers inspire, and students feel confident 
+                to question, explore, and achieve. We focus on conceptual learning, innovation, and holistic 
+                growth, ensuring every child reaches their true potential.
               </p>
             </div>
             
@@ -99,12 +99,12 @@ function IntroAbout() {
               <h4 className="text-lg md:text-xl font-bold text-slate-900 mb-4 md:mb-6">Our Key Advantages:</h4>
               <ul className="space-y-3 md:space-y-4">
                 {[
-                  'Accredited British Curriculum',
-                  'Experienced and Qualified Teachers',
-                  'Safe and Supportive Environment',
-                  'Strong Parent-School Partnership',
-                  'Extra-Curricular Activities',
-                  'Modern Facilities and Technology'
+                  'Cambridge (British) Curriculum',
+                  'Highly Qualified & Passionate Teachers',
+                  'STEM & Robotics Programs',
+                  'Arts, Taekwondo, and Sports Activities',
+                  'Modern Classrooms & Safe Learning Environment',
+                  'Focus on Confidence, Communication & Critical Thinking'
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 md:gap-4">
                     <div className="w-6 h-6 md:w-8 md:h-8 bg-gradient-to-r from-blue-600 to-slate-700 rounded-full flex items-center justify-center flex-shrink-0">

@@ -21,6 +21,7 @@ import Trips from './pages/extra/FieldTrips';
 import GalleryPage from './pages/GalleryPage';
 import Careers from './pages/Careers';
 import Contact from './pages/Contact';
+import Courses from './pages/Courses';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/courses" element={<Courses />} />
         </Routes>
       </main>
       <Footer />
