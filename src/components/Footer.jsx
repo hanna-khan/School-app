@@ -41,7 +41,7 @@ function Footer() {
                   </div>
                   <div>
                     <p className="text-xs md:text-sm text-gray-400">Call Support</p>
-                    <p className="font-bold text-base md:text-lg">+1 344 688 955</p>
+                    <p className="font-bold text-base md:text-lg">021-33393395</p>
                   </div>
                 </div>
 
@@ -61,7 +61,7 @@ function Footer() {
                   </div>
                   <div>
                     <p className="text-xs md:text-sm text-gray-400">Visit Us</p>
-                    <p className="font-bold text-base md:text-lg">123 Education St</p>
+                    <p className="font-bold text-base md:text-lg">C-2, Block D, North Nazimabad</p>
                   </div>
                 </div>
               </div>
@@ -95,9 +95,8 @@ function Footer() {
                 <div className="space-y-2 md:space-y-3">
                   {[
                     { name: 'About Us', href: '/about' },
+                    { name: 'Our Programs', href: '/courses' },
                     { name: 'Admissions', href: '/admissions' },
-                    { name: 'Curriculum', href: '/education' },
-                    { name: 'STEM Programs', href: '/stem' },
                     { name: 'Gallery', href: '/gallery' },
                     { name: 'Contact Us', href: '/contact' }
                   ].map((link, index) => (
@@ -123,12 +122,12 @@ function Footer() {
                 </h4>
                 <div className="space-y-2 md:space-y-3">
                   {[
-                    { name: 'Early Years (EYFS)', href: '/education/eyfs' },
-                    { name: 'Primary Education', href: '/education/primary' },
-                    { name: 'Secondary Education', href: '/education/secondary' },
-                    { name: 'Robotics & STEM', href: '/stem-robotics' },
-                    { name: 'Extra Curricular', href: '/extra-curricular' },
-                    { name: 'Field Trips', href: '/extra-curricular/field-trips' }
+                    { name: 'Early Years (EYFS)', href: '/courses' },
+                    { name: 'Primary Education', href: '/courses' },
+                    { name: 'Secondary Education', href: '/courses' },
+                    { name: 'O Levels', href: '/courses' },
+                    { name: 'STEM & Robotics', href: '/courses' },
+                    { name: 'Extra Curricular', href: '/courses' }
                   ].map((link, index) => (
                     <a 
                       key={index}

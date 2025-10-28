@@ -53,8 +53,7 @@ function Header() {
           <nav className="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-700">
             <Link to="/" className="bg-gradient-to-r from-slate-700 to-slate-800 text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition-all">HOME</Link>
             <Link to="/about" className="hover:text-slate-800 hover:font-bold transition-all">ABOUT</Link>
-            <Link to="/courses" className="hover:text-slate-800 hover:font-bold transition-all">COURSES</Link>
-            <Link to="/education" className="hover:text-slate-800 hover:font-bold transition-all">EDUCATION</Link>
+            <Link to="/courses" className="hover:text-slate-800 hover:font-bold transition-all">OUR PROGRAMS</Link>
             <Link to="/gallery" className="hover:text-slate-800 hover:font-bold transition-all">GALLERY</Link>
             <Link to="/contact" className="hover:text-slate-800 hover:font-bold transition-all">CONTACT</Link>
           </nav>
@@ -105,14 +104,7 @@ function Header() {
                 className="block w-full text-slate-700 px-6 py-3 rounded-lg hover:bg-slate-50 hover:text-slate-800 transition-all"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                COURSES
-              </Link>
-              <Link 
-                to="/education" 
-                className="block w-full text-slate-700 px-6 py-3 rounded-lg hover:bg-slate-50 hover:text-slate-800 transition-all"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                EDUCATION
+                OUR PROGRAMS
               </Link>
               <Link 
                 to="/gallery" 
