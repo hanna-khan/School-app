@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaPhone, FaClock, FaFacebook, FaLinkedin, FaYoutube, FaSearch, FaTimes } from 'react-icons/fa';
+import { FaPhone, FaClock, FaFacebook, FaLinkedin, FaYoutube, FaTimes } from 'react-icons/fa';
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
