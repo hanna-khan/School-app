@@ -63,9 +63,9 @@ function KeyStages() {
         <div className="absolute top-1/3 right-1/4 w-11 h-11 bg-slate-300/50 rounded-full animate-pulse" style={{animationDelay: '1.8s'}}></div>
         <div className="absolute bottom-1/3 left-1/2 w-8 h-8 bg-blue-200/70 rounded-full animate-pulse" style={{animationDelay: '0.3s'}}></div>
         <div className="text-center mb-16">
-          <p className="uppercase tracking-wider text-blue-600 font-semibold text-sm mb-2">EDUCATION PATHWAY</p>
+          <p className="uppercase tracking-wider text-[#2D6C9B] font-semibold text-sm mb-2">EDUCATION PATHWAY</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
-            Our <span className="text-blue-600">Key Stages</span>
+            Our <span className="text-[#2D6C9B]">Key Stages</span>
           </h2>
           <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">
             We follow a four-stage academic structure, each designed to meet students' developmental 
@@ -116,7 +116,7 @@ function KeyStages() {
             development of academic, social, and personal skills. Our experienced teachers guide students 
             through every step of their educational journey.
           </p>
-          <button className="bg-gradient-to-r from-blue-600 to-slate-700 text-white px-8 py-3 rounded-lg font-bold hover:shadow-lg transition-all">
+          <button className="bg-gradient-to-r from-endeavour-dark to-endeavour-blue text-white px-8 py-3 rounded-lg font-bold hover:shadow-lg transition-all">
             Learn More About Our Curriculum
           </button>
         </div>

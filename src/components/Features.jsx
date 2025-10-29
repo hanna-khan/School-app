@@ -23,13 +23,13 @@ function Features() {
         <div className="absolute top-1/3 right-1/4 w-11 h-11 bg-slate-300/50 rounded-full animate-pulse" style={{animationDelay: '1.8s'}}></div>
         <div className="absolute bottom-1/3 left-1/2 w-8 h-8 bg-blue-200/70 rounded-full animate-pulse" style={{animationDelay: '0.3s'}}></div>
         <div className="text-center mb-10">
-          <p className="uppercase tracking-wider text-blue-600 font-semibold">Choose Us</p>
+          <p className="uppercase tracking-wider text-[#2D6C9B] font-semibold">Choose Us</p>
           <h2 className="mt-2 text-3xl md:text-4xl font-extrabold text-slate-900">Education For Kids</h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {items.map((item, idx) => (
             <div key={idx} className={`rounded-2xl p-6 ${item.color} hover:shadow-lg transition-shadow`}>
-              <div className="w-12 h-12 rounded-lg bg-white text-blue-600 flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-lg bg-white text-[#2D6C9B] flex items-center justify-center mb-4">
                 <item.icon size={22} />
               </div>
               <h3 className="text-lg font-bold text-slate-900">{item.title}</h3>

@@ -19,7 +19,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-slate-800 to-blue-800 relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-br from-endeavour-dark via-endeavour-blue to-endeavour-dark relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-64 h-64 opacity-20">

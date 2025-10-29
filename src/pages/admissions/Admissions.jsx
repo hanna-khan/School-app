@@ -135,7 +135,7 @@ export default function Admissions() {
                       <div className="space-y-2">
                         {step.details.map((detail, detailIndex) => (
                           <div key={detailIndex} className="flex items-center gap-3">
-                            <div className="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"></div>
+                            <div className="w-2 h-2 bg-[#2D6C9B] rounded-full flex-shrink-0"></div>
                             <span className="text-slate-700">{detail}</span>
                           </div>
                         ))}

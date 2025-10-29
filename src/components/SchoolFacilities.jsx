@@ -42,7 +42,7 @@ const SchoolFacilities = () => {
                 </div>
                 
                 {/* Clean floating badge */}
-                <div className="absolute -bottom-3 md:-bottom-6 -right-3 md:-right-6 bg-gradient-to-r from-blue-600 to-slate-700 text-white rounded-xl md:rounded-2xl p-3 md:p-6 shadow-xl">
+                <div className="absolute -bottom-3 md:-bottom-6 -right-3 md:-right-6 bg-gradient-to-r from-endeavour-dark to-endeavour-blue text-white rounded-xl md:rounded-2xl p-3 md:p-6 shadow-xl">
                   <div className="text-center">
                     <div className="text-2xl md:text-4xl font-bold">21+</div>
                     <div className="text-xs md:text-sm font-medium opacity-90">Years of Excellence</div>
@@ -59,7 +59,7 @@ const SchoolFacilities = () => {
             </div>
             
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 leading-tight">
-              State-of-the-Art <span className="text-blue-600">School Facilities</span>
+              State-of-the-Art <span className="text-[#2D6C9B]">School Facilities</span>
             </h2>
 
             {/* Tabs */}
@@ -70,7 +70,7 @@ const SchoolFacilities = () => {
                   onClick={() => setActiveTab(tab.id)}
                   className={`px-3 md:px-4 py-2 text-xs md:text-sm font-medium border-b-2 transition-colors ${
                     activeTab === tab.id
-                      ? 'text-blue-600 border-blue-600'
+                      ? 'text-[#2D6C9B] border-blue-600'
                       : 'text-slate-700 border-transparent hover:text-slate-900'
                   }`}
                 >
@@ -89,7 +89,7 @@ const SchoolFacilities = () => {
               
               <div className="space-y-2 md:space-y-3">
                 <div className="flex items-center space-x-2 md:space-x-3">
-                  <div className="w-4 h-4 md:w-5 md:h-5 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-4 h-4 md:w-5 md:h-5 bg-[#2D6C9B] rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-2 h-2 md:w-3 md:h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -98,7 +98,7 @@ const SchoolFacilities = () => {
                 </div>
                 
                 <div className="flex items-center space-x-2 md:space-x-3">
-                  <div className="w-4 h-4 md:w-5 md:h-5 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-4 h-4 md:w-5 md:h-5 bg-[#2D6C9B] rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-2 h-2 md:w-3 md:h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -107,7 +107,7 @@ const SchoolFacilities = () => {
                 </div>
                 
                 <div className="flex items-center space-x-2 md:space-x-3">
-                  <div className="w-4 h-4 md:w-5 md:h-5 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-4 h-4 md:w-5 md:h-5 bg-[#2D6C9B] rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-2 h-2 md:w-3 md:h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -116,7 +116,7 @@ const SchoolFacilities = () => {
                 </div>
                 
                 <div className="flex items-center space-x-2 md:space-x-3">
-                  <div className="w-4 h-4 md:w-5 md:h-5 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-4 h-4 md:w-5 md:h-5 bg-[#2D6C9B] rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-2 h-2 md:w-3 md:h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -127,7 +127,7 @@ const SchoolFacilities = () => {
             </div>
 
             {/* Contact button */}
-            <button className="bg-blue-600 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-lg text-sm md:text-base">
+            <button className="bg-gradient-to-r from-endeavour-dark to-endeavour-blue text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-medium hover:shadow-lg transition-all shadow-lg text-sm md:text-base">
               CONTACT US
             </button>
           </div>

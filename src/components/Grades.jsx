@@ -1,7 +1,7 @@
 import React from 'react';
 
 const grades = [
-  { title: 'Grade 1', age: 'Age 03 - 04', color: 'bg-blue-600' },
+  { title: 'Grade 1', age: 'Age 03 - 04', color: 'bg-[#2D6C9B]' },
   { title: 'Grade 2', age: 'Age 03 - 04', color: 'bg-slate-700' },
   { title: 'Grade 3', age: 'Age 03 - 04', color: 'bg-blue-700' },
 ];
@@ -82,7 +82,7 @@ function Grades() {
       </div>
       
       {/* Progress indicator */}
-      <div className="absolute bottom-10 right-10 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
+      <div className="absolute bottom-10 right-10 w-16 h-16 bg-[#2D6C9B] rounded-full flex items-center justify-center">
         <span className="text-white font-bold">28%</span>
       </div>
     </section>

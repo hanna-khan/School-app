@@ -97,7 +97,7 @@ const PreschoolClasses = () => {
                     {classItem.title}
                   </h3>
                   
-                  <div className="text-blue-600 font-semibold text-lg">
+                  <div className="text-[#2D6C9B] font-semibold text-lg">
                     {classItem.price}
                   </div>
                   

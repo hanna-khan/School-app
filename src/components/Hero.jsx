@@ -3,7 +3,7 @@ import { FaStar } from 'react-icons/fa';
 
 function Hero() {
   return (
-    <section id="home" className="relative overflow-hidden bg-gradient-to-br from-slate-800 via-slate-700 to-blue-800 min-h-screen">
+    <section id="home" className="relative overflow-hidden bg-gradient-to-br from-endeavour-dark via-endeavour-blue to-endeavour-dark min-h-screen">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-10 md:top-20 left-10 md:left-20 w-16 md:w-32 h-16 md:h-32 bg-white/10 rounded-full blur-xl"></div>

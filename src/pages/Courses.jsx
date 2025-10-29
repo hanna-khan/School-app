@@ -17,7 +17,7 @@ function Courses() {
         'Motor Skills Development',
         'Communication & Confidence Building'
       ],
-      color: 'from-blue-500 to-blue-600'
+      color: 'from-endeavour-dark to-endeavour-blue'
     },
     {
       stage: 'Key Stage 2',
@@ -33,7 +33,7 @@ function Courses() {
         'Creative Writing, Art & Craft',
         'Physical Education, Music & Taekwondo'
       ],
-      color: 'from-slate-600 to-slate-700'
+      color: 'from-endeavour-blue to-endeavour-dark'
     },
     {
       stage: 'Key Stage 3',
@@ -49,7 +49,7 @@ function Courses() {
         'Debate, Leadership, and Team Collaboration',
         'Pre-O\' Level Subject Foundation'
       ],
-      color: 'from-blue-600 to-blue-700'
+      color: 'from-endeavour-dark to-endeavour-blue'
     },
     {
       stage: 'Key Stage 4',
@@ -66,7 +66,7 @@ function Courses() {
         'Islamiyat, Urdu, Pakistan Studies',
         'ICT, Global Perspectives'
       ],
-      color: 'from-slate-700 to-slate-800'
+      color: 'from-endeavour-blue to-endeavour-dark'
     }
   ];
 
@@ -82,7 +82,7 @@ function Courses() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
       {/* Header Section */}
-      <section className="py-20 bg-gradient-to-r from-slate-800 to-blue-800 text-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-br from-endeavour-dark via-endeavour-blue to-endeavour-dark text-white relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-80 h-80 bg-white/5 rounded-full blur-2xl"></div>
@@ -93,7 +93,7 @@ function Courses() {
             Academic Excellence
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-            Our Academic <span className="text-blue-300">Pathway</span>
+            Our Academic <span className="text-blue-200">Pathway</span>
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
             At Endeavour Academy, we provide a comprehensive educational journey from Early Years to O' Levels, 
@@ -171,7 +171,7 @@ function Courses() {
       </section>
 
       {/* Beyond the Classroom Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-slate-700 text-white">
+      <section className="py-20 bg-gradient-to-r from-endeavour-dark to-endeavour-blue text-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Beyond the Classroom</h2>
@@ -204,7 +204,7 @@ function Courses() {
           
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-endeavour-dark to-endeavour-blue rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <FaPhone size={24} className="text-white" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Phone</h3>
@@ -213,7 +213,7 @@ function Courses() {
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <FaWhatsapp size={24} className="text-white" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">WhatsApp</h3>
@@ -221,7 +221,7 @@ function Courses() {
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-endeavour-dark to-endeavour-blue rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <FaMapMarkerAlt size={24} className="text-white" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Visit</h3>

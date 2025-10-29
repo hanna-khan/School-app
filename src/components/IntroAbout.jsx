@@ -28,9 +28,9 @@ function IntroAbout() {
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <p className="uppercase tracking-wider text-blue-600 font-semibold text-sm mb-2">ABOUT US</p>
+              <p className="uppercase tracking-wider text-endeavour-dark font-semibold text-sm mb-2">ABOUT US</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
-            About <span className="text-blue-600">Endeavour Academy</span>
+            About <span className="text-endeavour-dark">Endeavour Academy</span>
           </h2>
           <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">
             At Endeavour Academy, we believe education is more than memorizing facts — it's about 
@@ -42,7 +42,7 @@ function IntroAbout() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-12">
           {features.map((feature, index) => (
             <div key={index} className="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center group">
-              <div className="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-blue-600 to-slate-700 text-white rounded-full mb-4 group-hover:scale-110 transition-transform">
+              <div className="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-endeavour-dark to-endeavour-blue text-white rounded-full mb-4 group-hover:scale-110 transition-transform">
                 {feature.icon}
               </div>
               <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">{feature.title}</h3>
@@ -69,7 +69,7 @@ function IntroAbout() {
               />
               
               {/* Floating badge */}
-              <div className="absolute -bottom-4 md:-bottom-8 -right-4 md:-right-8 bg-gradient-to-r from-blue-600 to-slate-700 text-white p-4 md:p-8 rounded-2xl md:rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
+              <div className="absolute -bottom-4 md:-bottom-8 -right-4 md:-right-8 bg-gradient-to-r from-endeavour-dark to-endeavour-blue text-white p-4 md:p-8 rounded-2xl md:rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
                 <div className="text-center">
                   <div className="text-2xl md:text-5xl font-bold">21+</div>
                   <div className="text-xs md:text-sm font-medium opacity-90">Years of Excellence</div>
@@ -86,7 +86,7 @@ function IntroAbout() {
           <div className="space-y-6 md:space-y-8 order-1 lg:order-2">
             <div>
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
-                Why Choose <span className="text-blue-600">Endeavour?</span>
+                Why Choose <span className="text-endeavour-dark">Endeavour?</span>
               </h3>
               <p className="text-slate-600 leading-relaxed text-base md:text-lg">
                 Our classrooms are spaces where curiosity thrives, teachers inspire, and students feel confident 
@@ -107,7 +107,7 @@ function IntroAbout() {
                   'Focus on Confidence, Communication & Critical Thinking'
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 md:gap-4">
-                    <div className="w-6 h-6 md:w-8 md:h-8 bg-gradient-to-r from-blue-600 to-slate-700 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-6 h-6 md:w-8 md:h-8 bg-gradient-to-r from-endeavour-dark to-endeavour-blue rounded-full flex items-center justify-center flex-shrink-0">
                       <svg className="w-3 h-3 md:w-4 md:h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
@@ -119,10 +119,10 @@ function IntroAbout() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-gradient-to-r from-blue-600 to-slate-700 text-white px-6 md:px-8 py-3 rounded-xl font-bold hover:shadow-lg hover:scale-105 transition-all duration-300 text-sm md:text-base">
+              <button className="bg-gradient-to-r from-endeavour-dark to-endeavour-blue text-white px-6 md:px-8 py-3 rounded-xl font-bold hover:shadow-lg hover:scale-105 transition-all duration-300 text-sm md:text-base">
                 Learn More
               </button>
-              <button className="bg-transparent border-2 border-blue-600 text-blue-600 px-6 md:px-8 py-3 rounded-xl font-bold hover:bg-blue-600 hover:text-white transition-all duration-300 text-sm md:text-base">
+              <button className="bg-transparent border-2 border-endeavour-blue text-endeavour-dark px-6 md:px-8 py-3 rounded-xl font-bold hover:bg-endeavour-blue hover:text-white transition-all duration-300 text-sm md:text-base">
                 Visit Us
               </button>
             </div>

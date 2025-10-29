@@ -46,44 +46,49 @@ export default function Contact() {
       icon: <FaMapMarkerAlt size={24} />,
       title: 'Address',
       details: ['C-2, Block D', 'North Nazimabad, Karachi'],
-      color: 'from-blue-600 to-blue-700'
+      color: 'from-endeavour-dark to-endeavour-blue',
+      iconBg: 'bg-gradient-to-br from-endeavour-dark to-endeavour-blue'
     },
     {
       icon: <FaPhone size={24} />,
       title: 'Phone',
       details: ['021-33393395', '021-36677701'],
-      color: 'from-blue-600 to-blue-700'
+      color: 'from-endeavour-dark to-endeavour-blue',
+      iconBg: 'bg-gradient-to-br from-endeavour-dark to-endeavour-blue'
     },
     {
       icon: <FaWhatsapp size={24} />,
       title: 'WhatsApp',
       details: ['0349-8849375'],
-      color: 'from-green-600 to-green-700'
+      color: 'from-green-500 to-green-600',
+      iconBg: 'bg-gradient-to-br from-green-500 to-green-600'
     },
     {
       icon: <FaEnvelope size={24} />,
       title: 'Email',
       details: ['info@endeavour.edu'],
-      color: 'from-blue-600 to-blue-700'
+      color: 'from-endeavour-dark to-endeavour-blue',
+      iconBg: 'bg-gradient-to-br from-endeavour-dark to-endeavour-blue'
     },
     {
       icon: <FaClock size={24} />,
       title: 'Office Hours',
       details: ['Monday - Friday: 8:00 AM - 3:00 PM', 'Saturday: 9:00 AM - 1:00 PM'],
-      color: 'from-slate-600 to-slate-700'
+      color: 'from-endeavour-blue to-endeavour-dark',
+      iconBg: 'bg-gradient-to-br from-endeavour-blue to-endeavour-dark'
     }
   ];
 
   const socialLinks = [
-    { icon: <FaFacebook size={20} />, name: 'Facebook', color: 'hover:bg-blue-600', href: '#' },
-    { icon: <FaLinkedin size={20} />, name: 'LinkedIn', color: 'hover:bg-blue-700', href: '#' },
-    { icon: <FaYoutube size={20} />, name: 'YouTube', color: 'hover:bg-red-600', href: '#' }
+    { icon: <FaFacebook size={20} />, name: 'Facebook', href: '#' },
+    { icon: <FaLinkedin size={20} />, name: 'LinkedIn', href: '#' },
+    { icon: <FaYoutube size={20} />, name: 'YouTube', href: '#' }
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
       {/* Header Section */}
-      <section className="py-20 bg-gradient-to-r from-slate-800 to-blue-800 text-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-br from-endeavour-dark via-endeavour-blue to-endeavour-dark text-white relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-80 h-80 bg-white/5 rounded-full blur-2xl"></div>
@@ -94,7 +99,7 @@ export default function Contact() {
             Get In Touch
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-            Contact <span className="text-blue-300">Us</span>
+            Contact <span className="text-blue-200">Us</span>
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
             We'd love to hear from you. Send us a message and we'll respond as soon as possible.
@@ -127,17 +132,19 @@ export default function Contact() {
               </div>
 
               {/* Contact Cards */}
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {contactInfo.map((info, index) => (
-                  <div key={index} className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-                    <div className="flex items-start gap-4">
-                      <div className={`w-12 h-12 bg-gradient-to-r ${info.color} rounded-xl flex items-center justify-center flex-shrink-0`}>
-                        {info.icon}
+                  <div key={index} className="bg-white p-5 rounded-xl shadow-md hover:shadow-lg border border-slate-100 hover:border-endeavour-blue/30 transition-all duration-300 group">
+                    <div className="flex items-center gap-4">
+                      <div className={`w-14 h-14 ${info.iconBg} rounded-xl flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 transition-transform duration-300`}>
+                        <div className="text-white">
+                          {info.icon}
+                        </div>
                       </div>
-                      <div>
-                        <h3 className="text-lg font-bold text-slate-900 mb-2">{info.title}</h3>
+                      <div className="flex-1">
+                        <h3 className="text-base font-bold text-endeavour-dark mb-1 group-hover:text-endeavour-blue transition-colors">{info.title}</h3>
                         {info.details.map((detail, i) => (
-                          <p key={i} className="text-slate-600">{detail}</p>
+                          <p key={i} className="text-slate-600 text-sm leading-relaxed">{detail}</p>
                         ))}
                       </div>
                     </div>
@@ -146,14 +153,14 @@ export default function Contact() {
               </div>
 
               {/* Social Media */}
-              <div className="bg-white p-6 rounded-2xl shadow-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-4">Follow Us</h3>
-                <div className="flex gap-4">
+              <div className="bg-gradient-to-br from-endeavour-dark to-endeavour-blue p-6 rounded-xl shadow-lg">
+                <h3 className="text-lg font-bold text-white mb-4">Follow Us</h3>
+                <div className="flex gap-3">
                   {socialLinks.map((social, index) => (
                     <a
                       key={index}
                       href={social.href}
-                      className={`w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 ${social.color} hover:text-white transition-all duration-300`}
+                      className={`w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center text-white hover:bg-white/20 hover:scale-110 transition-all duration-300 border border-white/20`}
                     >
                       {social.icon}
                     </a>
@@ -301,7 +308,7 @@ export default function Contact() {
           <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
             <div className="h-96 bg-slate-200 flex items-center justify-center">
               <div className="text-center">
-                <FaMapMarkerAlt size={48} className="text-blue-600 mx-auto mb-4" />
+                <FaMapMarkerAlt size={48} className="text-[#2D6C9B] mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-slate-900 mb-2">Interactive Map</h3>
                 <p className="text-slate-600">C-2, Block D, North Nazimabad, Karachi</p>
                 <p className="text-sm text-slate-500 mt-2">Map integration can be added here</p>

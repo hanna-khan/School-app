@@ -46,7 +46,7 @@ function Teachers() {
       
       <div className="max-w-7xl mx-auto px-4 relative z-10 pt-8">
         <div className="text-center mb-16">
-          <p className="uppercase tracking-wider text-blue-600 font-bold text-sm mb-4">EXPERT TEAM</p>
+          <p className="uppercase tracking-wider text-[#2D6C9B] font-bold text-sm mb-4">EXPERT TEAM</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900">Meet Our teacher</h2>
         </div>
 
@@ -59,14 +59,14 @@ function Teachers() {
                   alt={teacher.name}
                   className="w-full h-48 object-cover rounded-2xl"
                 />
-                <button className="absolute bottom-2 right-2 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                <button className="absolute bottom-2 right-2 w-8 h-8 bg-[#2D6C9B] rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
                   <FaShare size={14} className="text-white" />
                 </button>
               </div>
               
               <h3 className="text-xl font-bold text-slate-900 mb-2">{teacher.name}</h3>
               <p className={`text-sm font-medium ${
-                i === 3 ? 'text-blue-600' : 'text-slate-600'
+                i === 3 ? 'text-[#2D6C9B]' : 'text-slate-600'
               }`}>
                 {teacher.role}
               </p>
@@ -76,7 +76,7 @@ function Teachers() {
       </div>
       
       {/* Progress indicator */}
-      <div className="absolute bottom-10 right-10 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
+      <div className="absolute bottom-10 right-10 w-16 h-16 bg-[#2D6C9B] rounded-full flex items-center justify-center">
         <span className="text-white font-bold">61%</span>
       </div>
     </section>

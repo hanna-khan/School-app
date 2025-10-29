@@ -21,9 +21,9 @@ function Curriculum() {
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <p className="uppercase tracking-wider text-blue-600 font-semibold text-sm mb-2">OUR CURRICULUM</p>
+          <p className="uppercase tracking-wider text-[#2D6C9B] font-semibold text-sm mb-2">OUR CURRICULUM</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
-            Our <span className="text-blue-600">Curriculum</span>
+            Our <span className="text-[#2D6C9B]">Curriculum</span>
           </h2>
           <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">
             Our curriculum is designed to ignite curiosity and build a strong foundation in both academics 
@@ -37,7 +37,7 @@ function Curriculum() {
             <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">Core Academics</h3>
             <ul className="space-y-3 md:space-y-4">
               <li className="flex items-start gap-3">
-                <div className="w-5 h-5 md:w-6 md:h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-5 h-5 md:w-6 md:h-6 bg-[#2D6C9B] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <span className="text-white text-xs font-bold">✓</span>
                 </div>
                 <div>
@@ -46,7 +46,7 @@ function Curriculum() {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-5 h-5 md:w-6 md:h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-5 h-5 md:w-6 md:h-6 bg-[#2D6C9B] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <span className="text-white text-xs font-bold">✓</span>
                 </div>
                 <div>
@@ -55,7 +55,7 @@ function Curriculum() {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-5 h-5 md:w-6 md:h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-5 h-5 md:w-6 md:h-6 bg-[#2D6C9B] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <span className="text-white text-xs font-bold">✓</span>
                 </div>
                 <div>
@@ -64,7 +64,7 @@ function Curriculum() {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-5 h-5 md:w-6 md:h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-5 h-5 md:w-6 md:h-6 bg-[#2D6C9B] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <span className="text-white text-xs font-bold">✓</span>
                 </div>
                 <div>
@@ -78,7 +78,7 @@ function Curriculum() {
           <div className="bg-gradient-to-br from-blue-50 to-slate-50 p-6 md:p-8 rounded-2xl md:rounded-3xl">
             <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">Our Goal</h3>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-blue-600 mb-2 md:mb-4">Balanced minds.</div>
+              <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#2D6C9B] mb-2 md:mb-4">Balanced minds.</div>
               <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-700 mb-4 md:mb-6">Bright futures.</div>
               <p className="text-slate-600 text-sm md:text-base lg:text-lg leading-relaxed">
                 We believe that true education goes beyond textbooks. Our curriculum is designed to develop 

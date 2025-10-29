@@ -44,7 +44,7 @@ function About() {
             About Endeavour Academy
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
-            Welcome to <span className="text-blue-600">Endeavour Academy</span>
+            Welcome to <span className="text-[#2D6C9B]">Endeavour Academy</span>
           </h1>
           <p className="text-xl md:text-2xl text-slate-600 font-medium mb-4">
             Where Learning Inspires Growth
@@ -80,7 +80,7 @@ function About() {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-gradient-to-br from-blue-50 to-slate-50 p-6 rounded-2xl">
                 <h3 className="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-                  <FaStar className="text-blue-600" />
+                  <FaStar className="text-[#2D6C9B]" />
                   Our Vision
                 </h3>
                 <p className="text-slate-600 leading-relaxed">
@@ -90,7 +90,7 @@ function About() {
               </div>
               <div className="bg-gradient-to-br from-slate-50 to-blue-50 p-6 rounded-2xl">
                 <h3 className="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-                  <FaGraduationCap className="text-blue-600" />
+                  <FaGraduationCap className="text-[#2D6C9B]" />
                   Our Mission
                 </h3>
                 <p className="text-slate-600 leading-relaxed">
@@ -151,7 +151,7 @@ function About() {
             {whyChooseUs.map((item, index) => (
               <div key={index} className="flex items-center gap-3">
                 <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center flex-shrink-0">
-                  <FaCheck size={12} className="text-blue-600" />
+                  <FaCheck size={12} className="text-[#2D6C9B]" />
                 </div>
                 <span className="text-white font-medium">{item}</span>
               </div>

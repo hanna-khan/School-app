@@ -37,9 +37,9 @@ function News() {
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <p className="uppercase tracking-wider text-blue-600 font-semibold text-sm mb-2">STAY UPDATED</p>
+          <p className="uppercase tracking-wider text-[#2D6C9B] font-semibold text-sm mb-2">STAY UPDATED</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
-            News & <span className="text-blue-600">Events</span>
+            News & <span className="text-[#2D6C9B]">Events</span>
           </h2>
           <p className="text-slate-600 text-lg max-w-2xl mx-auto">
             Stay informed about the latest happenings, events, and announcements at our school
@@ -56,7 +56,7 @@ function News() {
                   className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500" 
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">
+                  <span className="bg-[#2D6C9B] text-white px-3 py-1 rounded-full text-xs font-bold uppercase">
                     {post.type}
                   </span>
                 </div>
@@ -74,7 +74,7 @@ function News() {
                   </div>
                 </div>
                 
-                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#2D6C9B] transition-colors">
                   {post.title}
                 </h3>
                 
@@ -82,7 +82,7 @@ function News() {
                   {post.description}
                 </p>
                 
-                <a href="/news" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all">
+                <a href="/news" className="inline-flex items-center gap-2 text-[#2D6C9B] font-semibold hover:gap-3 transition-all">
                   <span>Learn More</span>
                   <FaArrowRight size={14} />
                 </a>
@@ -92,7 +92,7 @@ function News() {
         </div>
 
         <div className="mt-12 text-center">
-          <button className="bg-gradient-to-r from-blue-600 to-slate-700 text-white px-8 py-3 rounded-lg font-bold hover:shadow-lg transition-all">
+          <button className="bg-gradient-to-r from-endeavour-dark to-endeavour-blue text-white px-8 py-3 rounded-lg font-bold hover:shadow-lg transition-all">
             View All News & Events
           </button>
         </div>

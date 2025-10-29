@@ -29,9 +29,9 @@ function Gallery() {
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <p className="uppercase tracking-wider text-blue-600 font-semibold text-sm mb-2">PHOTO GALLERY</p>
+          <p className="uppercase tracking-wider text-[#2D6C9B] font-semibold text-sm mb-2">PHOTO GALLERY</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
-            Life at <span className="text-blue-600">Endeavour School</span>
+            Life at <span className="text-[#2D6C9B]">Endeavour School</span>
           </h2>
           <p className="text-slate-600 text-lg max-w-2xl mx-auto">
             Take a glimpse into our vibrant school community and see our students in action
@@ -56,7 +56,7 @@ function Gallery() {
         </div>
         
         <div className="text-center">
-          <button className="bg-gradient-to-r from-blue-600 to-slate-700 text-white px-8 py-3 rounded-lg font-bold hover:shadow-lg transition-all hover:scale-105 transform duration-300">
+          <button className="bg-gradient-to-r from-endeavour-dark to-endeavour-blue text-white px-8 py-3 rounded-lg font-bold hover:shadow-lg transition-all hover:scale-105 transform duration-300">
             View Full Gallery
           </button>
         </div>

@@ -4,7 +4,7 @@ const facilities = [
   { 
     title: 'Play Ground', 
     description: 'Pre-School Has Open Doors Consntly Expand',
-    color: 'bg-blue-600',
+    color: 'bg-[#2D6C9B]',
     icon: (
       <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
@@ -68,10 +68,10 @@ function Facilities() {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-[#2D6C9B] rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-sm">🎯</span>
               </div>
-              <p className="uppercase tracking-wider text-blue-600 font-bold text-sm">INTRODUCING PLAYSROOM</p>
+              <p className="uppercase tracking-wider text-[#2D6C9B] font-bold text-sm">INTRODUCING PLAYSROOM</p>
             </div>
             <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">Kids Activities And Fun</h2>
             <p className="text-lg text-slate-600 leading-relaxed">
@@ -80,7 +80,7 @@ function Facilities() {
           </div>
           
           <div className="flex justify-end">
-            <div className="bg-blue-600 text-white p-8 rounded-2xl shadow-lg">
+            <div className="bg-[#2D6C9B] text-white p-8 rounded-2xl shadow-lg">
               <div className="text-4xl font-bold mb-2">20+</div>
               <div className="text-lg">Years Of Experience</div>
             </div>
@@ -103,7 +103,7 @@ function Facilities() {
       
       {/* Bottom decorative elements */}
       <div className="absolute bottom-0 right-0 w-1/4 h-32 bg-blue-100/20 rounded-tl-full"></div>
-      <div className="absolute bottom-10 right-10 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
+      <div className="absolute bottom-10 right-10 w-16 h-16 bg-[#2D6C9B] rounded-full flex items-center justify-center">
         <span className="text-white font-bold">72%</span>
       </div>
     </section>

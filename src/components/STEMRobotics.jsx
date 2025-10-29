@@ -52,9 +52,9 @@ function STEMRobotics() {
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="uppercase tracking-wider text-blue-600 font-semibold text-sm mb-2">STEM EDUCATION</p>
+          <p className="uppercase tracking-wider text-[#2D6C9B] font-semibold text-sm mb-2">STEM EDUCATION</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
-            <span className="text-blue-600">STEM</span> & Robotics Excellence
+            <span className="text-[#2D6C9B]">STEM</span> & Robotics Excellence
           </h2>
           <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">
             Prepare your child for the future with our comprehensive STEM and Robotics programs. 
@@ -110,25 +110,25 @@ function STEMRobotics() {
             <h3 className="text-2xl font-bold text-slate-900 mb-6">Why Choose Our STEM Program?</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-6 h-6 bg-[#2D6C9B] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                   <span className="text-white text-xs">✓</span>
                 </div>
                 <span className="text-slate-700">Hands-on learning with latest technology</span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-6 h-6 bg-[#2D6C9B] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                   <span className="text-white text-xs">✓</span>
                 </div>
                 <span className="text-slate-700">Expert instructors with industry experience</span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-6 h-6 bg-[#2D6C9B] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                   <span className="text-white text-xs">✓</span>
                 </div>
                 <span className="text-slate-700">Competition teams and project showcases</span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-6 h-6 bg-[#2D6C9B] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                   <span className="text-white text-xs">✓</span>
                 </div>
                 <span className="text-slate-700">Collaboration with local tech companies</span>
@@ -168,13 +168,13 @@ function STEMRobotics() {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-gradient-to-r from-blue-600 to-slate-700 rounded-3xl p-8 md:p-12 text-center text-white">
+        <div className="bg-gradient-to-r from-endeavour-dark to-endeavour-blue rounded-3xl p-8 md:p-12 text-center text-white">
           <h3 className="text-3xl font-bold mb-4">Ready to Start Your STEM Journey?</h3>
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
             Join our innovative STEM and Robotics programs and give your child the skills they need for tomorrow's world.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-slate-50 transition-colors shadow-lg">
+            <button className="bg-white text-endeavour-dark px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
               Enroll Now
             </button>
             <button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white/10 transition-colors">

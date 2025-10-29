@@ -27,9 +27,9 @@ function AdmissionRequirements() {
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <p className="uppercase tracking-wider text-blue-600 font-semibold text-sm mb-2">ENDEAVOUR ACADEMY</p>
+          <p className="uppercase tracking-wider text-[#2D6C9B] font-semibold text-sm mb-2">ENDEAVOUR ACADEMY</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
-            Admission <span className="text-blue-600">Requirements</span>
+            Admission <span className="text-[#2D6C9B]">Requirements</span>
           </h2>
           <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed mb-4">
             "Endeavouring to Learn" - Cambridge Assessment International Education
@@ -48,7 +48,7 @@ function AdmissionRequirements() {
           
           <div className="relative z-10">
             <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-slate-700 text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-endeavour-dark to-endeavour-blue text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
@@ -66,7 +66,7 @@ function AdmissionRequirements() {
                 
                 <div className="relative z-10">
                   <div className="flex items-center gap-3 mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-endeavour-dark to-endeavour-blue rounded-xl flex items-center justify-center">
                       <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                       </svg>
@@ -79,28 +79,28 @@ function AdmissionRequirements() {
                   
                   <div className="grid md:grid-cols-3 gap-6">
                     <div className="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-blue-100 group">
-                      <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                      <div className="w-16 h-16 bg-gradient-to-r from-endeavour-dark to-endeavour-blue rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                         <span className="text-white font-bold text-lg">PN</span>
                       </div>
-                      <div className="text-xl font-bold text-blue-600 mb-2">PRE-NURSERY</div>
+                      <div className="text-xl font-bold text-[#2D6C9B] mb-2">PRE-NURSERY</div>
                       <div className="text-slate-700 font-semibold mb-2">2.5 - 3.5 Years</div>
                       <div className="text-xs text-slate-500">First steps in education</div>
                     </div>
                     
                     <div className="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-blue-100 group">
-                      <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                      <div className="w-16 h-16 bg-gradient-to-r from-endeavour-dark to-endeavour-blue rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                         <span className="text-white font-bold text-lg">N</span>
                       </div>
-                      <div className="text-xl font-bold text-blue-600 mb-2">NURSERY</div>
+                      <div className="text-xl font-bold text-[#2D6C9B] mb-2">NURSERY</div>
                       <div className="text-slate-700 font-semibold mb-2">3.5 - 4.5 Years</div>
                       <div className="text-xs text-slate-500">Play-based learning</div>
                     </div>
                     
                     <div className="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-blue-100 group">
-                      <div className="w-16 h-16 bg-gradient-to-r from-blue-700 to-slate-700 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                      <div className="w-16 h-16 bg-gradient-to-r from-endeavour-blue to-endeavour-dark rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                         <span className="text-white font-bold text-lg">KG</span>
                       </div>
-                      <div className="text-xl font-bold text-blue-600 mb-2">KINDERGARTEN</div>
+                      <div className="text-xl font-bold text-[#2D6C9B] mb-2">KINDERGARTEN</div>
                       <div className="text-slate-700 font-semibold mb-2">4.5 - 5.5 Years</div>
                       <div className="text-xs text-slate-500">Preparing for primary</div>
                     </div>
@@ -115,7 +115,7 @@ function AdmissionRequirements() {
                 
                 <div className="relative z-10">
                   <div className="flex items-center gap-3 mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-r from-slate-600 to-slate-700 rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-endeavour-dark to-endeavour-blue rounded-xl flex items-center justify-center">
                       <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
                         <path fillRule="evenodd" d="M4 5a2 2 0 012-2v1a1 1 0 001 1h6a1 1 0 001-1V3a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3z" clipRule="evenodd"/>
@@ -129,12 +129,12 @@ function AdmissionRequirements() {
                   
                   <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
                     {[
-                      { year: 'Year 1', age: '5.5 - 6.5 Years', color: 'from-slate-500 to-slate-600', icon: '1' },
-                      { year: 'Year 2', age: '6.5 - 7.5 Years', color: 'from-slate-600 to-slate-700', icon: '2' },
-                      { year: 'Year 3', age: '7.5 - 8.5 Years', color: 'from-blue-500 to-blue-600', icon: '3' },
-                      { year: 'Year 4', age: '8.5 - 9.5 Years', color: 'from-blue-600 to-blue-700', icon: '4' },
-                      { year: 'Year 5', age: '9.5 - 10.5 Years', color: 'from-blue-700 to-slate-700', icon: '5' },
-                      { year: 'Year 6', age: '10.5 - 11.5 Years', color: 'from-slate-600 to-slate-800', icon: '6' }
+                      { year: 'Year 1', age: '5.5 - 6.5 Years', color: 'from-endeavour-dark to-endeavour-blue', icon: '1' },
+                      { year: 'Year 2', age: '6.5 - 7.5 Years', color: 'from-endeavour-blue to-endeavour-dark', icon: '2' },
+                      { year: 'Year 3', age: '7.5 - 8.5 Years', color: 'from-endeavour-dark to-endeavour-blue', icon: '3' },
+                      { year: 'Year 4', age: '8.5 - 9.5 Years', color: 'from-endeavour-blue to-endeavour-dark', icon: '4' },
+                      { year: 'Year 5', age: '9.5 - 10.5 Years', color: 'from-endeavour-dark to-endeavour-blue', icon: '5' },
+                      { year: 'Year 6', age: '10.5 - 11.5 Years', color: 'from-endeavour-blue to-endeavour-dark', icon: '6' }
                     ].map((item, index) => (
                       <div key={index} className="bg-white rounded-xl p-4 text-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-slate-100 group">
                         <div className={`w-12 h-12 bg-gradient-to-r ${item.color} rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform`}>
@@ -155,7 +155,7 @@ function AdmissionRequirements() {
                 
                 <div className="relative z-10">
                   <div className="flex items-center gap-3 mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-endeavour-dark to-endeavour-blue rounded-xl flex items-center justify-center">
                       <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd"/>
                         <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/>
@@ -169,11 +169,11 @@ function AdmissionRequirements() {
                   
                   <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
                     {[
-                      { year: 'Year 7', age: '11.5 - 12.5 Years', color: 'from-blue-500 to-blue-600', icon: '7' },
-                      { year: 'Year 8', age: '12.5 - 13.5 Years', color: 'from-blue-600 to-blue-700', icon: '8' },
-                      { year: 'Year 9', age: '13.5 - 14.5 Years', color: 'from-blue-700 to-slate-700', icon: '9' },
-                      { year: 'O Level 1', age: '14.5 - 15.5 Years', color: 'from-slate-600 to-slate-700', icon: 'O1' },
-                      { year: 'O Level 2', age: '15.5 - 16.5 Years', color: 'from-slate-700 to-slate-800', icon: 'O2' }
+                      { year: 'Year 7', age: '11.5 - 12.5 Years', color: 'from-endeavour-dark to-endeavour-blue', icon: '7' },
+                      { year: 'Year 8', age: '12.5 - 13.5 Years', color: 'from-endeavour-blue to-endeavour-dark', icon: '8' },
+                      { year: 'Year 9', age: '13.5 - 14.5 Years', color: 'from-endeavour-dark to-endeavour-blue', icon: '9' },
+                      { year: 'O Level 1', age: '14.5 - 15.5 Years', color: 'from-endeavour-blue to-endeavour-dark', icon: 'O1' },
+                      { year: 'O Level 2', age: '15.5 - 16.5 Years', color: 'from-endeavour-dark to-endeavour-blue', icon: 'O2' }
                     ].map((item, index) => (
                       <div key={index} className="bg-white rounded-xl p-4 text-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-blue-100 group">
                         <div className={`w-12 h-12 bg-gradient-to-r ${item.color} rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform`}>
@@ -197,7 +197,7 @@ function AdmissionRequirements() {
             {steps.map((step, index) => (
               <div key={index} className="relative">
                 <div className="bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition-shadow h-full">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-slate-700 text-white rounded-full flex items-center justify-center font-bold text-xl mb-3 mx-auto">
+                  <div className="w-12 h-12 bg-gradient-to-br from-endeavour-dark to-endeavour-blue text-white rounded-full flex items-center justify-center font-bold text-xl mb-3 mx-auto">
                     {step.number}
                   </div>
                   <h4 className="font-bold text-slate-900 mb-2 text-sm">{step.title}</h4>
@@ -213,14 +213,14 @@ function AdmissionRequirements() {
 
 
         {/* Call to Action */}
-        <div className="bg-gradient-to-r from-blue-600 to-slate-700 rounded-3xl p-8 md:p-12 text-center text-white">
+        <div className="bg-gradient-to-r from-endeavour-dark to-endeavour-blue rounded-3xl p-8 md:p-12 text-center text-white">
           <h3 className="text-3xl font-bold mb-4">Ready to Start Your Application?</h3>
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
             Join our community of learners and give your child the gift of quality education. 
             Our admissions team is here to help you through every step.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-slate-50 transition-colors shadow-lg">
+            <button className="bg-white text-endeavour-dark px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
               Apply Now
             </button>
             <button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white/10 transition-colors">
