@@ -5,7 +5,6 @@ import Curriculum from '../components/Curriculum';
 import STEMRobotics from '../components/STEMRobotics';
 import AdmissionRequirements from '../components/AdmissionRequirements';
 import SchoolFacilities from '../components/SchoolFacilities';
-import Testimonials from '../components/Testimonials';
 import PreschoolClasses from '../components/PreschoolClasses';
 import Gallery from '../components/Gallery';
 import News from '../components/News';
@@ -20,7 +19,6 @@ function HomePage() {
       <STEMRobotics />
       <AdmissionRequirements />
       <SchoolFacilities />
-      <Testimonials />
       <PreschoolClasses />
       <Gallery />
       <News />

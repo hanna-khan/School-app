@@ -3,15 +3,15 @@ import { FaStar } from 'react-icons/fa';
 
 function Hero() {
   return (
-    <section id="home" className="relative overflow-hidden bg-gradient-to-br from-endeavour-dark via-endeavour-blue to-endeavour-dark min-h-screen">
+    <section id="home" className="relative overflow-hidden bg-gradient-to-br from-endeavour-dark via-endeavour-blue to-endeavour-dark" style={{minHeight: 'calc(100vh - 200px)'}}>
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-10 md:top-20 left-10 md:left-20 w-16 md:w-32 h-16 md:h-32 bg-white/10 rounded-full blur-xl"></div>
-        <div className="absolute top-20 md:top-40 right-20 md:right-40 w-12 md:w-24 h-12 md:h-24 bg-blue-300/20 rounded-full blur-lg"></div>
-        <div className="absolute bottom-10 md:bottom-20 left-1/4 w-20 md:w-40 h-20 md:h-40 bg-slate-300/20 rounded-full blur-2xl"></div>
+        <div className="absolute top-10 left-10 w-16 h-16 bg-white/10 rounded-full blur-xl"></div>
+        <div className="absolute top-20 right-20 w-12 h-12 bg-blue-300/20 rounded-full blur-lg"></div>
+        <div className="absolute bottom-10 left-1/4 w-20 h-20 bg-slate-300/20 rounded-full blur-2xl"></div>
       </div>
       
-      <div className="relative max-w-7xl mx-auto px-4 py-12 md:py-20 lg:py-32 grid lg:grid-cols-2 gap-8 md:gap-16 items-center min-h-screen">
+      <div className="relative max-w-7xl mx-auto px-4 py-8 grid lg:grid-cols-2 gap-6 items-center" style={{minHeight: 'calc(100vh - 200px)'}}>
         <div className="text-white text-center lg:text-left">
           <div className="flex items-center justify-center lg:justify-start gap-2 mb-4">
             <FaStar className="text-blue-300" size={16} />
