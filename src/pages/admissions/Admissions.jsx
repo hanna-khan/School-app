@@ -155,6 +155,159 @@ export default function Admissions() {
         </div>
       </section>
 
+      {/* Age Criteria Section */}
+      <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-slate-700 text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              Age Criteria for Admission
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Find Your Child's Perfect Stage</h2>
+            <p className="text-slate-600 text-lg max-w-3xl mx-auto">
+              Every child's educational journey begins at the right age. Discover which stage is perfect for your little one.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
+            {/* Early Years Foundation Stage */}
+            <div className="border-b border-slate-100 last:border-b-0">
+              <div className="p-6 md:p-8">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-slate-700 rounded-xl flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
+                    EYFS
+                  </div>
+                  <div>
+                    <h3 className="text-xl md:text-2xl font-bold text-slate-900">Early Years Foundation Stage</h3>
+                    <p className="text-slate-600 text-sm">Building the foundation for lifelong learning</p>
+                  </div>
+                </div>
+                
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between p-4 bg-slate-50 rounded-xl hover:bg-blue-50 transition-colors">
+                    <div className="flex items-center gap-4">
+                      <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-slate-700 rounded-lg flex items-center justify-center text-white font-bold text-sm">
+                        PN
+                      </div>
+                      <div>
+                        <div className="font-bold text-slate-900">Pre-Nursery</div>
+                        <div className="text-sm text-slate-500">First steps in education</div>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <div className="font-semibold text-[#2D6C9B]">2.5 - 3.5 Years</div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center justify-between p-4 bg-slate-50 rounded-xl hover:bg-blue-50 transition-colors">
+                    <div className="flex items-center gap-4">
+                      <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-slate-700 rounded-lg flex items-center justify-center text-white font-bold text-sm">
+                        N
+                      </div>
+                      <div>
+                        <div className="font-bold text-slate-900">Nursery</div>
+                        <div className="text-sm text-slate-500">Play-based learning</div>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <div className="font-semibold text-[#2D6C9B]">3.5 - 4.5 Years</div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center justify-between p-4 bg-slate-50 rounded-xl hover:bg-blue-50 transition-colors">
+                    <div className="flex items-center gap-4">
+                      <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-slate-700 rounded-lg flex items-center justify-center text-white font-bold text-sm">
+                        KG
+                      </div>
+                      <div>
+                        <div className="font-bold text-slate-900">Kindergarten</div>
+                        <div className="text-sm text-slate-500">Preparing for primary</div>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <div className="font-semibold text-[#2D6C9B]">4.5 - 5.5 Years</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Key Stage 1 & 2 */}
+            <div className="border-b border-slate-100 last:border-b-0">
+              <div className="p-6 md:p-8">
+                <div className="flex items-center gap-4 mb-6">
+                  {/* <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-slate-700 rounded-xl flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
+                    KS 1&2
+                  </div> */}
+                  <div>
+                    <h3 className="text-xl md:text-2xl font-bold text-slate-900">Key Stage 1 & 2</h3>
+                    <p className="text-slate-600 text-sm">Primary education foundation years</p>
+                  </div>
+                </div>
+                
+                <div className="space-y-3">
+                  {[
+                    { year: 'Year 1', age: '5.5 - 6.5 Years' },
+                    { year: 'Year 2', age: '6.5 - 7.5 Years' },
+                    { year: 'Year 3', age: '7.5 - 8.5 Years' },
+                    { year: 'Year 4', age: '8.5 - 9.5 Years' },
+                    { year: 'Year 5', age: '9.5 - 10.5 Years' },
+                    { year: 'Year 6', age: '10.5 - 11.5 Years' }
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-center justify-between p-4 bg-slate-50 rounded-xl hover:bg-blue-50 transition-colors">
+                      <div className="flex items-center gap-4">
+                        <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-slate-700 rounded-lg flex items-center justify-center text-white font-bold text-sm">
+                          {index + 1}
+                        </div>
+                        <div className="font-bold text-slate-900">{item.year}</div>
+                      </div>
+                      <div className="font-semibold text-[#2D6C9B]">{item.age}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Key Stage 3 & 4 */}
+            <div>
+              <div className="p-6 md:p-8">
+                <div className="flex items-center gap-4 mb-6">
+                  {/* <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-slate-700 rounded-xl flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
+                    KS 3&4
+                  </div> */}
+                  <div>
+                    <h3 className="text-xl md:text-2xl font-bold text-slate-900">Key Stage 3 & 4</h3>
+                    <p className="text-slate-600 text-sm">Secondary education and O Level preparation</p>
+                  </div>
+                </div>
+                
+                <div className="space-y-3">
+                  {[
+                    { year: 'Year 7', age: '11.5 - 12.5 Years' },
+                    { year: 'Year 8', age: '12.5 - 13.5 Years' },
+                    { year: 'Year 9', age: '13.5 - 14.5 Years' },
+                    { year: 'O Level 1', age: '14.5 - 15.5 Years' },
+                    { year: 'O Level 2', age: '15.5 - 16.5 Years' }
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-center justify-between p-4 bg-slate-50 rounded-xl hover:bg-blue-50 transition-colors">
+                      <div className="flex items-center gap-4">
+                        <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-slate-700 rounded-lg flex items-center justify-center text-white font-bold text-sm">
+                          {index < 3 ? index + 7 : index === 3 ? 'O1' : 'O2'}
+                        </div>
+                        <div className="font-bold text-slate-900">{item.year}</div>
+                      </div>
+                      <div className="font-semibold text-[#2D6C9B]">{item.age}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Requirements Section */}
       <section className="py-20 bg-gradient-to-r from-blue-50 to-slate-50">
         <div className="max-w-4xl mx-auto px-4">

@@ -27,7 +27,7 @@ function Header() {
     <>
       {/* Top Bar */}
       <div className="bg-gradient-to-r from-endeavour-dark to-endeavour-blue text-white py-2">
-        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between text-sm">
+        <div className="max-w-7xl mx-auto px-2 flex items-center justify-between text-sm">
           <div className="flex items-center gap-2 md:gap-6">
             <div className="flex items-center gap-2">
               <FaPhone size={12} className="text-blue-200" />
@@ -54,11 +54,11 @@ function Header() {
       {/* Main Header */}
       <header className="w-full bg-white sticky top-0 z-50 border-b">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 md:gap-3">
+          <Link to="/" className="flex items-center gap-2 md:gap-3 ml-2">
             <img 
               src="/Logo-3.png" 
               alt="Endeavour School Logo" 
-              className="w-10 h-10 md:w-16 md:h-16 object-contain"
+              className="w-12 h-12 md:w-16 md:h-16 object-contain"
             />
             {/* <span className="text-xl md:text-2xl font-bold text-slate-800">Endeavour</span> */}
           </Link>

@@ -21,7 +21,6 @@ function Curriculum() {
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <p className="uppercase tracking-wider text-[#2D6C9B] font-semibold text-sm mb-2">OUR CURRICULUM</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
             Our <span className="text-[#2D6C9B]">Curriculum</span>
           </h2>

@@ -1,51 +1,40 @@
 import React from 'react';
-import { FaBaby, FaChild, FaUserGraduate, FaChalkboardTeacher } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaBaby, FaChild, FaUserGraduate, FaChalkboardTeacher, FaArrowRight } from 'react-icons/fa';
 
 function KeyStages() {
-  const keyStages = [
+  const ageGroups = [
     {
-      icon: <FaBaby size={36} />,
-      stage: 'Key Stage 1',
-      title: 'Early Years Foundation Stage (EYFS)',
-      ageRange: 'Ages 3-5',
-      grades: 'Pre-K & KG',
+      icon: <FaBaby size={32} />,
+      title: 'Early Years',
+      ageRange: 'Ages 2.5 - 5.5',
+      grades: 'Pre-Nursery, Nursery, Kindergarten',
       color: 'from-pink-500 to-rose-500',
-      bgColor: 'bg-pink-50',
-      description: 'Play, explore, and learn — our youngest learners build early literacy, numeracy, and social confidence through engaging, joyful experiences.',
-      focus: ['Play-based learning', 'Early literacy & numeracy', 'Social confidence', 'Joyful exploration']
+      bgColor: 'bg-pink-50'
     },
     {
-      icon: <FaChild size={36} />,
-      stage: 'Key Stage 2',
-      title: 'Primary Education',
-      ageRange: 'Ages 5-11',
-      grades: 'Year 1-6',
+      icon: <FaChild size={32} />,
+      title: 'Primary',
+      ageRange: 'Ages 5.5 - 11.5',
+      grades: 'Year 1 - Year 6',
       color: 'from-blue-500 to-cyan-500',
-      bgColor: 'bg-blue-50',
-      description: 'A strong academic base combined with curiosity-driven learning prepares students to think critically and communicate effectively.',
-      focus: ['Strong academic base', 'Critical thinking', 'Effective communication', 'Curiosity-driven learning']
+      bgColor: 'bg-blue-50'
     },
     {
-      icon: <FaChalkboardTeacher size={36} />,
-      stage: 'Key Stage 3',
+      icon: <FaChalkboardTeacher size={32} />,
       title: 'Lower Secondary',
-      ageRange: 'Ages 11-14',
-      grades: 'Year 7-9',
+      ageRange: 'Ages 11.5 - 14.5',
+      grades: 'Year 7 - Year 9',
       color: 'from-purple-500 to-indigo-500',
-      bgColor: 'bg-purple-50',
-      description: 'Students begin exploring diverse subjects, from STEM to Humanities, while developing independence, teamwork, and leadership.',
-      focus: ['Diverse subject exploration', 'Independence development', 'Teamwork skills', 'Leadership growth']
+      bgColor: 'bg-purple-50'
     },
     {
-      icon: <FaUserGraduate size={36} />,
-      stage: 'Key Stage 4',
+      icon: <FaUserGraduate size={32} />,
       title: 'Upper Secondary',
-      ageRange: 'Ages 14-16',
-      grades: 'Year 10-11',
+      ageRange: 'Ages 14.5 - 16.5',
+      grades: 'O Level 1 - O Level 2',
       color: 'from-orange-500 to-amber-500',
-      bgColor: 'bg-orange-50',
-      description: 'At this stage, students refine their academic goals, engage in research and projects, and prepare for higher education with confidence.',
-      focus: ['Academic goal refinement', 'Research & projects', 'Higher education prep', 'Confidence building']
+      bgColor: 'bg-orange-50'
     }
   ];
 
@@ -73,52 +62,33 @@ function KeyStages() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {keyStages.map((ks, index) => (
-            <div key={index} className={`${ks.bgColor} rounded-3xl p-8 hover:shadow-2xl transition-all border-2 border-transparent hover:border-white`}>
-              <div className="flex items-start gap-6">
-                <div className={`flex-shrink-0 w-20 h-20 bg-gradient-to-br ${ks.color} text-white rounded-2xl flex items-center justify-center shadow-lg`}>
-                  {ks.icon}
-                </div>
-                <div className="flex-1">
-                  <div className="mb-4">
-                    <div className="text-sm font-bold text-slate-500 uppercase tracking-wide mb-1">{ks.stage}</div>
-                    <h3 className="text-2xl font-bold text-slate-900 mb-2">{ks.title}</h3>
-                    <div className="flex gap-4 text-sm">
-                      <span className="bg-white px-3 py-1 rounded-full font-semibold text-slate-700">{ks.ageRange}</span>
-                      <span className="bg-white px-3 py-1 rounded-full font-semibold text-slate-700">{ks.grades}</span>
-                    </div>
-                  </div>
-                  
-                  <p className="text-slate-700 mb-4 leading-relaxed">{ks.description}</p>
-                  
-                  <div>
-                    <h4 className="font-bold text-slate-900 mb-2 text-sm uppercase tracking-wide">Key Focus Areas:</h4>
-                    <ul className="grid grid-cols-2 gap-2">
-                      {ks.focus.map((item, i) => (
-                        <li key={i} className="flex items-center gap-2">
-                          <div className={`w-1.5 h-1.5 bg-gradient-to-br ${ks.color} rounded-full`}></div>
-                          <span className="text-sm text-slate-700">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          {ageGroups.map((group, index) => (
+            <div key={index} className={`${group.bgColor} rounded-2xl p-6 text-center hover:shadow-xl transition-all border-2 border-transparent hover:border-white`}>
+              <div className={`w-16 h-16 bg-gradient-to-br ${group.color} text-white rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg`}>
+                {group.icon}
               </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">{group.title}</h3>
+              <p className="text-sm font-semibold text-slate-700 mb-1">{group.ageRange}</p>
+              <p className="text-xs text-slate-600">{group.grades}</p>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 bg-white rounded-3xl p-8 shadow-xl text-center">
-          <h3 className="text-2xl font-bold text-slate-900 mb-4">Progressive Learning Journey</h3>
-          <p className="text-slate-600 max-w-3xl mx-auto mb-6">
+        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl text-center">
+          <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Find Your Child's Perfect Stage</h3>
+          <p className="text-slate-600 max-w-3xl mx-auto mb-8 text-lg">
             Each key stage builds upon the previous one, ensuring a seamless transition and comprehensive 
             development of academic, social, and personal skills. Our experienced teachers guide students 
             through every step of their educational journey.
           </p>
-          <button className="bg-gradient-to-r from-endeavour-dark to-endeavour-blue text-white px-8 py-3 rounded-lg font-bold hover:shadow-lg transition-all">
-            Learn More About Our Curriculum
-          </button>
+          <Link 
+            to="/admissions" 
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-endeavour-dark to-endeavour-blue text-white px-8 py-3 rounded-lg font-bold hover:shadow-lg transition-all hover:scale-105"
+          >
+            Learn More
+            <FaArrowRight />
+          </Link>
         </div>
       </div>
     </section>
