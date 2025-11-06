@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaImages } from 'react-icons/fa';
 
 export default function GalleryPage() {
+  const [visibleCount, setVisibleCount] = useState(12);
+  const imagesPerLoad = 12;
+
   const images = [
     // PNG files
     './images/1.png',
@@ -132,6 +135,24 @@ export default function GalleryPage() {
     './images/PG/IMG_4229.JPG',
   ];
 
+  const visibleImages = images.slice(0, visibleCount);
+  const hasMore = visibleCount < images.length;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if user has scrolled near the bottom
+      if (
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 500 &&
+        visibleCount < images.length
+      ) {
+        setVisibleCount((prev) => Math.min(prev + imagesPerLoad, images.length));
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [visibleCount, images.length]);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
       {/* Header Section */}
@@ -158,7 +179,7 @@ export default function GalleryPage() {
       <section className="py-20 relative">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-            {images.map((src, i) => (
+            {visibleImages.map((src, i) => (
               <div key={i} className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-300">
                 <img 
                   src={src} 
@@ -173,6 +194,15 @@ export default function GalleryPage() {
               </div>
             ))}
           </div>
+          
+          {hasMore && (
+            <div className="text-center mt-12">
+              <div className="inline-flex items-center gap-2 text-slate-600">
+                <div className="w-5 h-5 border-2 border-[#2D6C9B] border-t-transparent rounded-full animate-spin"></div>
+                <span className="text-sm font-medium">Loading more images...</span>
+              </div>
+            </div>
+          )}
         </div>
       </section>
     </div>
