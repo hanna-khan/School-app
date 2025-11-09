@@ -58,7 +58,7 @@ function Header() {
             <img 
               src="/Logo-3.png" 
               alt="Endeavour School Logo" 
-              className="w-12 h-12 md:w-16 md:h-16 object-contain"
+              className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 object-contain"
             />
             {/* <span className="text-xl md:text-2xl font-bold text-slate-800">Endeavour</span> */}
           </Link>
